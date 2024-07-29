@@ -17,6 +17,9 @@
     "react-dom": "^18.3.1",
     "semantic-release": "^24.0.0"
   },
+  "release": {
+    "branches": ["main"]
+  },
   "devDependencies": {
     "@chromatic-com/storybook": "^1.6.1",
     "@storybook/addon-essentials": "^8.2.6",
@@ -38,8 +41,14 @@
     "eslint-plugin-storybook": "^0.8.0",
     "storybook": "^8.2.6",
     "typescript": "^5.2.2",
-    "vite": "^5.3.4"
+    "vite": "^5.3.4",
+    "semantic-release": "^19.0.0",
+    "@semantic-release/commit-analyzer": "^9.0.0",
+    "@semantic-release/release-notes-generator": "^10.0.0",
+    "@semantic-release/npm": "^8.0.0",
+    "@semantic-release/github": "^8.0.0"
   },
+  
   "repository": {
     "type": "git",
     "url": "https://github.com/ishwar-org/react-avengers-infinity-saga.git"
