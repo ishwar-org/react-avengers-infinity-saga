@@ -17,6 +17,10 @@
     "react-dom": "^18.3.1",
     "semantic-release": "^24.0.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ishwar-org/react-avengers-infinity-saga.git"
+  },
   "release": {
     "branches": ["main"]
   },
@@ -47,10 +51,5 @@
     "@semantic-release/release-notes-generator": "^10.0.0",
     "@semantic-release/npm": "^8.0.0",
     "@semantic-release/github": "^8.0.0"
-  },
-  
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ishwar-org/react-avengers-infinity-saga.git"
   }
 }
