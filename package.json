@@ -1,7 +1,7 @@
 {
   "name": "react-avengers-infinity-saga",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.0-development",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -9,7 +9,8 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "semantic-release": "semantic-release"
   },
   "dependencies": {
     "react": "^18.3.1",
@@ -36,6 +37,11 @@
     "eslint-plugin-storybook": "^0.8.0",
     "storybook": "^8.2.6",
     "typescript": "^5.2.2",
-    "vite": "^5.3.4"
+    "vite": "^5.3.4",
+    "semantic-release": "^24.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ishwar-org/react-avengers-infinity-saga.git"
   }
 }
