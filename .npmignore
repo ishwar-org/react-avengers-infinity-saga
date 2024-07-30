@@ -8,5 +8,4 @@ node_modules
 .storybook-static/
 *.stories.tsx
 .eslintrc.cjs
-.releaserc
 .gitignore

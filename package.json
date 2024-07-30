@@ -16,6 +16,17 @@
     },
     "./style": "./dist/style.css"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ishwar-org/react-avengers-infinity-saga.git"
+  },
+  "keywords": ["React", "TypScript, Material-UI"],
+  "author": "Ishwar Deoolkar",
+  "license": "MIT License",
+  "bugs": {
+    "url": "https://github.com/ishwar-17/react-avengers-infinity-saga/issues"
+  },
+  "homepage": "https://github.com/ishwar-17/react-avengers-infinity-saga#readme",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -34,10 +45,6 @@
     "react-feather": "^2.0.10",
     "semantic-release": "^24.0.0",
     "vite-plugin-static-copy": "^1.0.6"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ishwar-org/react-avengers-infinity-saga.git"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
@@ -81,6 +88,17 @@
     "commitizen": {
       "path": "cz-conventional-changelog"
     }
+  },
+  "release":{
+    "branches": ["main"],
+    "repositoryUrl": "https://github.com/ishwar-org/react-avengers-infinity-saga.git",
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      "@semantic-release/github"
+    ]
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
