@@ -1,0 +1,158 @@
+/*--------========= CHIP VARiANT FILLED ============---------*/
+:global(.MuiChip-root).chipMui.chip-filled{
+  color: var(--white);
+}
+
+:global(.MuiChip-root).chipMui.chip-filled-primary{
+  background-color: var(--primary);
+}
+
+:global(.MuiChip-root).chipMui.chip-filled-secondary{
+  background-color: var(--secondary);
+}
+
+:global(.MuiChip-root).chipMui.chip-filled-error{
+  background-color: var(--error);
+}
+
+:global(.MuiChip-root).chipMui.chip-filled-info{
+  background-color: var(--info);
+}
+
+:global(.MuiChip-root).chipMui.chip-filled-success{
+  background-color: var(--success);
+}
+
+:global(.MuiChip-root).chipMui.chip-filled-warning{
+  background-color: var(--warning);
+}
+
+/*--------========= CHIP VARiANT OUTLINED ============---------*/
+:global(.MuiChip-root).chipMui.chip-outlined{
+	border-width: var(--borderWidth1);
+	border-style: solid;
+}
+
+:global(.MuiChip-root).chipMui.chip-outlined-primary{
+	background-color: var(--primaryHover);
+	color: var(--primary);
+	border-color: var(--primaryBorder);
+}
+
+:global(.MuiChip-root).chipMui.chip-outlined-secondary{
+	background-color: var(--secondaryHover);
+	color: var(--greySecondary);
+	border-color: var(--greySecondaryBorder);
+}
+
+:global(.MuiChip-root).chipMui.chip-outlined-error{
+	background-color: var(--errorHover);
+	color: var(--error);
+	border-color: var(--errorBorder);
+}
+
+:global(.MuiChip-root).chipMui.chip-outlined-info{
+	background-color: var(--infoHover);
+	color: var(--info);
+	border-color: var(--infoBorder);
+}
+
+:global(.MuiChip-root).chipMui.chip-outlined-success{
+	background-color: var(--successHover);
+	color: var(--success);
+	border-color: var(--successBorder);
+}
+
+:global(.MuiChip-root).chipMui.chip-outlined-warning{
+	background-color: var(--warningHover);
+	color: var(--warning);
+	border-color: var(--warningBorder);
+}
+
+/*---------========= CHIP SIZE - SMALL, MEDIUM =========-----*/
+:global(.MuiChip-root).chipMui{
+	padding: var(--padding2);
+	font-size: var(--fontSize12);
+	font-weight: var(--fontWeight500);
+}
+
+:global(.MuiChip-root).chipMui.chip-small{
+  height: var(--height24);
+}
+
+:global(.MuiChip-root).chipMui.chip-medium{
+  height: var(--height30);
+}
+
+:global(.MuiChip-root).chipMui.chip-small.chip-icon :global(.MuiChip-label){
+  padding:var(--padding0) var(--padding4);
+}
+
+:global(.MuiChip-root).chipMui.chip-medium.chip-icon :global(.MuiChip-label){
+  padding:var(--padding0) var(--padding6);
+}
+
+/*---------========== Icon size ===========------*/
+:global(.MuiChip-root).chipMui.chip-small svg:first-child{
+  width: var(--width16);
+  height: var(--height16);
+}
+
+:global(.MuiChip-root).chipMui.chip-medium svg:first-child{
+  width: var(--width18);
+  height: var(--height18);
+}
+
+:global(.MuiChip-root).chipMui.chip-small :global(.MuiChip-deleteIcon){
+  width: var(--width12);
+  height: var(--height12);
+}
+
+:global(.MuiChip-root).chipMui.chip-medium :global(.MuiChip-deleteIcon){
+  width: var(--width14);
+  height: var(--height14);
+}
+
+:global(.MuiChip-root).chipMui.chip-normal{
+  border-radius: var(--borderRadius4);
+}
+
+/*---------========== Delect Icon color variant ===========------*/
+:global(.MuiChip-root).chipMui.chip-filled :global(.MuiChip-deleteIcon){
+  color: var(--white);
+}   
+
+:global(.MuiChip-root).chipMui.chip-outlined-primary :global(.MuiChip-deleteIcon){
+  color: var(--primary);
+}
+
+:global(.MuiChip-root).chipMui.chip-outlined-secondary :global(.MuiChip-deleteIcon){
+  color: var(--greySecondary);
+}
+
+:global(.MuiChip-root).chipMui.chip-outlined-error :global(.MuiChip-deleteIcon){
+  color: var(--error);
+}
+
+:global(.MuiChip-root).chipMui.chip-outlined-info :global(.MuiChip-deleteIcon){
+  color: var(--info);
+}
+
+:global(.MuiChip-root).chipMui.chip-outlined-success :global(.MuiChip-deleteIcon){
+  color: var(--success);
+}
+
+:global(.MuiChip-root).chipMui.chip-outlined-warning :global(.MuiChip-deleteIcon){
+  color: var(--warning);
+}
+
+:global(.MuiButtonBase-root) :global(.MuiChip-deleteIcon){
+  margin: 0 2px 0 5px;
+}
+
+
+
+
+
+
+

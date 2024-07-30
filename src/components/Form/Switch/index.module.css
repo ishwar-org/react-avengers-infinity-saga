@@ -1,0 +1,57 @@
+.switchContainer:global(.MuiSwitch-root){
+    padding: var(--padding6);
+}
+
+.switchControlLabel{
+    color: var(--neutral400);
+}
+
+.switchControlLabel :global(.MuiFormControlLabel-asterisk){
+    color: var(--error);
+}
+
+.switchContainer :global(.MuiSwitch-track){
+    border-radius: var(--borderRadius20);
+    background: var(--secondary);
+}
+
+.switch-bg-primary :global(.MuiSwitch-switchBase.Mui-checked),
+.switch-bg-primary :global(.MuiSwitch-switchBase.Mui-checked.Mui-disabled){
+    color: var(--primary);
+}
+
+.switch-bg-primary :global(.MuiSwitch-switchBase.Mui-checked+.MuiSwitch-track){
+    background: var(--primaryPurpleGradient);
+}
+
+.switch-bg-secondary :global(.MuiSwitch-switchBase.Mui-checked),
+.switch-bg-secondary :global(.MuiSwitch-switchBase.Mui-checked.Mui-disabled){
+    color: var(--neutral500);
+}
+
+.switch-bg-secondary :global(.MuiSwitch-switchBase.Mui-checked+.MuiSwitch-track){
+    background-color: var(--neutral400);
+}
+
+.switch-bg-success :global(.MuiSwitch-switchBase.Mui-checked),
+.switch-bg-success :global(.MuiSwitch-switchBase.Mui-checked.Mui-disabled){
+    color: var(--success);
+}
+
+.switch-bg-success :global(.MuiSwitch-switchBase.Mui-checked+.MuiSwitch-track){
+    background: var(--primaryGreenGradient);
+}
+
+.switch-bg-warning :global(.MuiSwitch-switchBase.Mui-checked),
+.switch-bg-warning :global(.MuiSwitch-switchBase.Mui-checked.Mui-disabled){
+    color: var(--warning);
+}
+
+.switch-bg-warning :global(.MuiSwitch-switchBase.Mui-checked+.MuiSwitch-track){
+    background: var(--warningGradient);
+}
+
+.switchContainer :global(.MuiSwitch-switchBase.Mui-checked.Mui-disabled){
+    opacity: 0.2;
+    cursor: not-allowed;
+}

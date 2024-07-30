@@ -1,0 +1,62 @@
+
+
+.showPasswordIcon{
+    cursor: var(--cursorPointer);
+    width: var(--width18);
+    height: var(--height18);
+}
+
+.passwordField__requirementsWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top:  var(--margin12);
+    row-gap: 6px;
+}
+
+@media (width <=576px) {
+    :global(.MuiGrid-container).passwordField__requirementsWrapper{
+        flex-direction: column;
+    }
+
+    :global(.MuiGrid-item).passwordField__requirements{
+        justify-content: flex-start;
+        max-width: 100%;
+    }
+}
+
+.passwordField__requirements{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    font-weight: var(--fontWeight500);
+    font-size: var(--fontSize10);
+    color: var(--neutral400);
+    word-break: normal;
+    line-height: 12px;
+}
+
+.passwordField__requirements.passwordField__requirementError{
+    color: var(--error600);
+}
+
+.passwordField__requirements.passwordField__requirementCompleted{
+    text-decoration: line-through;
+}
+
+.passwordField__check{
+    min-width: var(--width12);
+    width: var(--width12);
+    height: var(--height12);
+    color: var(--green-bright);
+}
+
+.passwordField__circle{
+    width: var(--width8);
+    height: var(--height8);
+    color: var(--neutral300);
+}
+
+.passwordField__requirements > p{
+    margin:0;
+    white-space: nowrap;
+}

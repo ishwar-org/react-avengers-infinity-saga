@@ -1,0 +1,12 @@
+# Ignore built files
+node_modules
+
+# Ignore configuration files that are not needed for the consumer
+.git/
+.github/
+.storybook/
+.storybook-static/
+*.stories.tsx
+.eslintrc.cjs
+.releaserc
+.gitignore

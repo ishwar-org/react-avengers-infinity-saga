@@ -1,0 +1,71 @@
+.common-textfield :global(.MuiInputLabel-root){
+    font-size: var(--fontSize14);
+    line-height: var(--lineHeight20);
+    color: var(--greySecondary);
+    letter-spacing: 0.5px;
+}
+
+.common-textfield :global(.MuiInputBase-root) :global(.MuiInputBase-input){
+    font-size: var(--fontSize14);
+}
+
+.common-textfield :global(.MuiInputBase-root),
+.textfield-nomral :global(.MuiInputBase-root){
+    border-radius: var(--borderRadius4);
+}
+
+.textfield-rounded :global(.MuiInputBase-root){
+    border-radius: var(--borderRadius8);
+}
+
+.textfield-pill :global(.MuiInputBase-root){
+    border-radius: var(--borderRadius30)
+}
+
+.textfield-startadornment > svg,
+.textfield-endadornment > svg{
+    color: var(--secondary);
+}
+
+.textfield-success-endadornment > svg,
+.textfield-error-endadornment > svg{
+    width: var(--width18);
+    height: var(--height18);
+}
+
+.textfield-success-endadornment > svg{
+    color: var(--success);
+}
+
+.textfield-error-endadornment > svg{
+    color: var(--danger); 
+}
+
+.textfield-success :global(.MuiInputLabel-root.Mui-focused){
+    color: var(--greySecondary);
+}
+
+.textfield-error :global(.MuiInputLabel-root.Mui-error){
+    color: var(--danger);
+}
+
+.textfield-success :global(.MuiInputBase-root):hover :global(.MuiOutlinedInput-notchedOutline),
+.textfield-success :global(.MuiInputBase-root.Mui-focused) :global(.MuiOutlinedInput-notchedOutline){
+    border-color: var(--primaryHover60);
+    border-width: var(--borderWidth1);
+}
+
+.textfield-success :global(.MuiFilledInput-root){
+    border:var(--borderWidth1) solid var(--primaryHover60);
+}
+
+.textfield-error :global(.MuiFilledInput-root){
+    border:var(--borderWidth1) solid var(--danger);
+}
+
+.textfield-error :global(.MuiInputBase-root.Mui-error) :global(.MuiOutlinedInput-notchedOutline),
+.textfield-success :global(.MuiInputBase-root.Mui-error.Mui-focused) :global(.MuiOutlinedInput-notchedOutline) {
+    border-color: var(--danger);
+    border-width: var(--borderWidth1);
+}
+

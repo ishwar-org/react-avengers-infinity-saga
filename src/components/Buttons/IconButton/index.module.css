@@ -1,0 +1,138 @@
+:global(.MuiIconButton-root).iconButtonMui{
+    transition: all 0.3s ease-in-out;
+}
+
+/*------- ICON BUTTON VARIANT FILLED ----------*/
+:global(.MuiIconButton-root).iconButtonMui.iconbutton-filled-primary{
+    background: var(--primaryPurpleGradient);
+    color: var(--white);
+}
+
+:global(.MuiIconButton-root).iconButtonMui.iconbutton-filled-secondary{
+    background: var(--secondaryHover);
+    color: var(--greySecondary);
+}
+
+:global(.MuiIconButton-root).iconButtonMui.iconbutton-filled-success{
+    background: var(--success);
+    color: var(--white);
+}
+
+:global(.MuiIconButton-root).iconButtonMui.iconbutton-filled-error{
+    background: var(--error);
+    color: var(--white);
+}
+
+:global(.MuiIconButton-root).iconButtonMui.iconbutton-filled-info{
+    background: var(--info);
+    color: var(--white);
+}
+
+:global(.MuiIconButton-root).iconButtonMui.iconbutton-filled-warning{
+    background: var(--warning);
+    color: var(--white);
+}
+
+/*-------======== ICON BUTTON VARIANT FILLED AND DISABLED ========----------*/
+:global(.MuiIconButton-root).iconButtonMui.iconbutton-outlined{
+    background-color: var(--white);
+    border-width: var(--borderWidth1);
+    border-style: var(--borderStyleSolid);
+    transition: all var(--durations5s) var(--effectEaseInOut);
+}
+
+:global(.MuiIconButton-root.Mui-disabled).iconbutton-disabled{
+    cursor: var(--cursorNotAllowed);
+    pointer-events: initial;
+    opacity: var(--opacity30);
+}
+
+
+:global(.MuiIconButton-root).iconButtonMui.iconbutton-outlined-primary{
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+:global(.MuiIconButton-root).iconButtonMui.iconbutton-outlined-secondary{
+    border-color: var(--greySecondary);
+    color: var(--greySecondary);
+}
+
+:global(.MuiIconButton-root).iconButtonMui.iconbutton-outlined-success{
+    border-color: var(--success);
+    color: var(--success);
+}
+
+:global(.MuiIconButton-root).iconButtonMui.iconbutton-outlined-error{
+    border-color: var(--error);
+    color: var(--error);
+}
+
+:global(.MuiIconButton-root).iconButtonMui.iconbutton-outlined-info{
+    border-color: var(--info);
+    color: var(--info);
+}
+
+:global(.MuiIconButton-root).iconButtonMui.iconbutton-outlined-warning{
+    border-color: var(--warning);
+    color: var(--warning);
+}
+
+:global(.MuiIconButton-root.Mui-disabled).iconbutton-outlined-primary,
+:global(.MuiIconButton-root).iconButtonMui.iconbutton-outlined-primary:hover{
+    background-color: var(--primaryHover);
+}
+
+:global(.MuiIconButton-root.Mui-disabled).iconbutton-outlined-secondary,
+:global(.MuiIconButton-root).iconButtonMui.iconbutton-outlined-secondary:hover{
+    background-color: var(--secondaryHover);
+}
+
+:global(.MuiIconButton-root.Mui-disabled).iconbutton-outlined-success,
+:global(.MuiIconButton-root).iconButtonMui.iconbutton-outlined-success:hover{
+    background-color: var(--successHover);
+}
+
+:global(.MuiIconButton-root.Mui-disabled).iconbutton-outlined-error,
+:global(.MuiIconButton-root).iconButtonMui.iconbutton-outlined-error:hover{
+    background-color: var(--errorHover);
+}
+
+:global(.MuiIconButton-root.Mui-disabled).iconbutton-outlined-info,
+:global(.MuiIconButton-root).iconButtonMui.iconbutton-outlined-info:hover{
+    background-color: var(--infoHover);
+}
+
+:global(.MuiIconButton-root.Mui-disabled).iconbutton-outlined-warning,
+:global(.MuiIconButton-root).iconButtonMui.iconbutton-outlined-warning:hover{
+    background-color: var(--warningHover);
+}
+
+
+/*------- ICON BUTTON SIZES - SM, MD and LG ----------*/
+:global(.MuiIconButton-root).iconButtonMui.iconbutton-sm {
+    padding: var(--padding8);
+}
+
+:global(.MuiIconButton-root).iconButtonMui.iconbutton-md {
+    padding: var(--padding12);
+}
+
+:global(.MuiIconButton-root).iconButtonMui.iconbutton-lg {
+    padding: var(--padding16);
+}
+
+:global(.MuiIconButton-root).iconButtonMui.iconbutton-sm > svg{
+    width: var(--width16);
+    height: var(--height16);
+}
+
+:global(.MuiIconButton-root).iconButtonMui.iconbutton-md > svg{
+    width: var(--width24);
+    height: var(--height24);
+}
+
+:global(.MuiIconButton-root).iconButtonMui.iconbutton-lg > svg{
+    width: var(--width28);
+    height: var(--height28);
+}

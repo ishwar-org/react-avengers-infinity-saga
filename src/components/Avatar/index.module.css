@@ -1,0 +1,82 @@
+:global(.MuiAvatar-root).avatarMui{
+	font-weight: var(--fontWeight500);
+	color:var(--white);
+}
+
+:global(.MuiAvatar-root).avatarMui.avatar-xxs{
+	width: var(--width20);
+	height: var(--height20);
+	font-size: var(--fontSize8);
+}
+
+:global(.MuiAvatar-root).avatarMui.avatar-xs{
+	width: var(--width28);
+	height: var(--height28);
+	font-size: var(--fontSize10);
+}
+
+:global(.MuiAvatar-root).avatarMui.avatar-sm{
+	width: var(--width38);
+	height: var(--height38);
+	font-size: var(--fontSize12);
+}
+
+:global(.MuiAvatar-root).avatarMui.avatar-md{
+    width: var(--width48);
+    height: var(--height48);
+    font-size: var(--fontSize14);
+}
+
+:global(.MuiAvatar-root).avatarMui.avatar-lg{
+    width: var(--width58);
+    height: var(--height58);
+    font-size: var(--fontSize18);
+}
+
+:global(.MuiAvatar-root).avatarMui.avatar-xl{
+	width: var(--width68);
+	height: var(--height68);
+	font-size: var(--fontSize22);
+}
+
+:global(.MuiAvatar-root).avatarMui.avatar-xxl{
+	width: var(--width80);
+	height: var(--height80);
+	font-size: var(--fontSize28);
+}
+
+/*---------======= Avatar with Badges =========--------*/
+:global(.MuiBadge-root).avatarBadge-xxs :global(.MuiBadge-badge) svg{
+	width: var(--width10);
+	height: var(--height10);
+}
+
+:global(.MuiBadge-root).avatarBadge-xs :global(.MuiBadge-badge) svg{
+	width: var(--width12);
+	height: var(--height12);
+}
+
+:global(.MuiBadge-root).avatarBadge-sm :global(.MuiBadge-badge) svg{
+	width: var(--width16);
+	height: var(--height16);
+}
+
+:global(.MuiBadge-root).avatarBadge-md :global(.MuiBadge-badge) svg{
+	width: var(--width20);
+	height: var(--height20);
+}
+
+:global(.MuiBadge-root).avatarBadge-lg :global(.MuiBadge-badge) svg{
+	width: var(--width22);
+	height: var(--height22);
+}
+
+:global(.MuiBadge-root).avatarBadge-xl :global(.MuiBadge-badge) svg{
+	width: var(--width24);
+	height: var(--height24);
+}
+
+:global(.MuiBadge-root).avatarBadge-xxl :global(.MuiBadge-badge) svg{
+	width: var(--width28);
+	height: var(--height28);
+}

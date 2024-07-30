@@ -1,0 +1,43 @@
+
+
+:global(.MuiAvatarGroup-root).avatarGroupMUI.avatar-group-xxs > :global(.MuiAvatarGroup-avatar){
+    width: var(--width20);
+	height: var(--height20);
+	font-size: var(--fontSize8);
+}
+
+:global(.MuiAvatarGroup-root).avatarGroupMUI.avatar-group-xs > :global(.MuiAvatarGroup-avatar){
+    width: var(--width28);
+	height: var(--height28);
+	font-size: var(--fontSize10);
+}
+
+:global(.MuiAvatarGroup-root).avatarGroupMUI.avatar-group-sm > :global(.MuiAvatarGroup-avatar){
+    width: var(--width38);
+	height: var(--height38);
+	font-size: var(--fontSize12);
+}
+
+:global(.MuiAvatarGroup-root).avatarGroupMUI.avatar-group-md > :global(.MuiAvatarGroup-avatar){
+    width: var(--width48);
+    height: var(--height48);
+    font-size: var(--fontSize14);
+}
+
+:global(.MuiAvatarGroup-root).avatarGroupMUI.avatar-group-lg > :global(.MuiAvatarGroup-avatar){
+    width: var(--width58);
+    height: var(--height58);
+    font-size: var(--fontSize18);
+}
+
+:global(.MuiAvatarGroup-root).avatarGroupMUI.avatar-group-xl > :global(.MuiAvatarGroup-avatar){
+    width: var(--width68);
+	height: var(--height68);
+	font-size: var(--fontSize22);
+}
+
+:global(.MuiAvatarGroup-root).avatarGroupMUI.avatar-group-xxl > :global(.MuiAvatarGroup-avatar){
+    width: var(--width80);
+	height: var(--height80);
+	font-size: var(--fontSize28);
+}

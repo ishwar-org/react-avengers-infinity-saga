@@ -1,0 +1,225 @@
+:global(.MuiButton-root).buttonMui {
+    font-weight:var(--fontWeight500);
+    line-height: var(--lineHeight20);
+    font-size: var(--fontSize14);
+    text-transform: initial;
+}
+
+/*-------========= BUTTON VARIANT - TEXT AND OUTLINED, DISBALED ======----------*/
+:global(.MuiButton-root).buttonMui.button-text{
+    transition: all var(--durations5s) var(--effectEaseInOut);
+    background-color: var(--backgroundTransparent);
+}
+
+:global(.MuiButton-root).buttonMui.button-outlined{
+    transition: all var() var(--effectEaseInOut);
+    background-color: var(--white);
+    border-width: var(--borderWidth1);
+    border-style: var(--borderStyleSolid);
+}
+
+:global(.MuiButton-root.Mui-disabled).button-disabled{
+    cursor: var(--cursorNotAllowed);
+    pointer-events: initial;
+    opacity: var(--opacity30);
+}
+
+:global(.MuiButton-root).buttonMui.button-text-primary{
+    color: var(--primary);
+}
+
+:global(.MuiButton-root).buttonMui.button-text-secondary{
+    color: var(--secondary);
+}
+
+:global(.MuiButton-root).buttonMui.button-text-success{
+    color: var(--success);
+}
+
+:global(.MuiButton-root).buttonMui.button-text-error{
+    color: var(--error);
+}
+
+:global(.MuiButton-root).buttonMui.button-text-info{
+    color: var(--info);
+}
+
+:global(.MuiButton-root).buttonMui.button-text-warning{
+    color: var(--warning);
+}
+
+:global(.MuiButton-root.Mui-disabled).button-text-primary,
+:global(.MuiButton-root.Mui-disabled).button-outlined-primary,
+:global(.MuiButton-root).buttonMui.button-text-primary:hover,
+:global(.MuiButton-root).buttonMui.button-outlined-primary:hover,
+:global(.MuiButton-root.Mui-disabled).button-text-primary:hover,
+:global(.MuiButton-root.Mui-disabled).button-outlined-primary:hover{
+    background-color: var(--primaryHover)
+}
+
+:global(.MuiButton-root.Mui-disabled).button-text-secondary,
+:global(.MuiButton-root.Mui-disabled).button-outlined-secondary,
+:global(.MuiButton-root).buttonMui.button-text-secondary:hover,
+:global(.MuiButton-root).buttonMui.button-outlined-secondary:hover,
+:global(.MuiButton-root.Mui-disabled).button-text-secondary:hover,
+:global(.MuiButton-root.Mui-disabled).button-outlined-secondary:hover{
+    background-color: var(--secondaryHover)
+}
+
+:global(.MuiButton-root.Mui-disabled).button-text-success,
+:global(.MuiButton-root.Mui-disabled).button-outlined-success,
+:global(.MuiButton-root).buttonMui.button-text-success:hover,
+:global(.MuiButton-root).buttonMui.button-outlined-success:hover,
+:global(.MuiButton-root.Mui-disabled).button-text-success:hover,
+:global(.MuiButton-root.Mui-disabled).button-outlined-success:hover{
+    background-color: var(--successHover)
+}
+
+:global(.MuiButton-root.Mui-disabled).button-text-error,
+:global(.MuiButton-root.Mui-disabled).button-outlined-error,
+:global(.MuiButton-root).buttonMui.button-text-error:hover,
+:global(.MuiButton-root).buttonMui.button-outlined-error:hover,
+:global(.MuiButton-root.Mui-disabled).button-text-error:hover,
+:global(.MuiButton-root.Mui-disabled).button-outlined-error:hover{
+    background-color: var(--errorHover)
+}
+
+:global(.MuiButton-root.Mui-disabled).button-text-info,
+:global(.MuiButton-root.Mui-disabled).button-outlined-info,
+:global(.MuiButton-root).buttonMui.button-text-info:hover,
+:global(.MuiButton-root).buttonMui.button-outlined-info:hover,
+:global(.MuiButton-root.Mui-disabled).button-text-info:hover,
+:global(.MuiButton-root.Mui-disabled).button-outlined-info:hover{
+    background-color: var(--infoHover)
+}
+
+:global(.MuiButton-root.Mui-disabled).button-text-warning,
+:global(.MuiButton-root.Mui-disabled).button-outlined-warning,
+:global(.MuiButton-root).buttonMui.button-text-warning:hover,
+:global(.MuiButton-root).buttonMui.button-outlined-warning:hover,
+:global(.MuiButton-root.Mui-disabled).button-text-warning:hover,
+:global(.MuiButton-root.Mui-disabled).button-outlined-warning:hover{
+    background-color: var(--warningHover)
+}
+
+/*------- BUTTON VARIANT - CONTAINED ----------*/
+:global(.MuiButton-root).buttonMui.button-contained-primary {
+    background: var(--primaryPurpleGradient);
+    color: var(--white);
+}
+
+:global(.MuiButton-root).buttonMui.button-contained-secondary {
+    background: var(--white);
+    color: var(--primary);
+    box-shadow: var(--boxShadowSeondary);
+}
+
+:global(.MuiButton-root).buttonMui.button-contained-success {
+    background: var(--success);
+    color: var(--white);
+}
+
+:global(.MuiButton-root).buttonMui.button-contained-error {
+    background: var(--error);
+    color: var(--white);
+}
+
+:global(.MuiButton-root).buttonMui.button-contained-info {
+    background: var(--info);
+    color: var(--white);
+}
+
+:global(.MuiButton-root).buttonMui.button-contained-warning {
+    background: var(--warning);
+    color: var(--white);
+}
+
+:global(.MuiButton-root.Mui-disabled).button-contained-secondary{
+    box-shadow: none;
+}
+
+/*------- BUTTON VARIANT - OUTLINED ----------*/
+:global(.MuiButton-root).buttonMui.button-outlined-primary {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+:global(.MuiButton-root).buttonMui.button-outlined-secondary {
+    border-color: var(--secondary);
+    color: var(--secondary);
+}
+
+:global(.MuiButton-root).buttonMui.button-outlined-success {
+    border-color: var(--success);
+    color: var(--success);
+}
+
+:global(.MuiButton-root).buttonMui.button-outlined-error {
+    border-color: var(--error);
+    color: var(--error);
+}
+
+:global(.MuiButton-root).buttonMui.button-outlined-info {
+    border-color: var(--info);
+    color: var(--info);
+}
+
+:global(.MuiButton-root).buttonMui.button-outlined-warning {
+    border-color: var(--warning);
+    color: var(--warning);
+}
+
+/*------- BUTTON SHAPES - NORMAL, ROUNDED and PILL ----------*/
+:global(.MuiButton-root).buttonMui.button-normal {
+    border-radius: var(--borderRadius4);
+}
+
+:global(.MuiButton-root).buttonMui.button-rounded {
+    border-radius: var(--borderRadius8);
+}
+
+:global(.MuiButton-root).buttonMui.button-pill {
+    border-radius: var(--borderRadius28);
+}
+
+/*------- BUTTON SIZES - SM, MD and LG ----------*/
+:global(.MuiButton-root).buttonMui.button-sm {
+    padding: var(--padding4) var(--padding10);
+    font-size: var(--fontSize12);
+}
+
+:global(.MuiButton-root).buttonMui.button-md {
+    padding: var(--padding8) var(--padding14);
+}
+
+:global(.MuiButton-root).buttonMui.button-lg {
+    padding: var(--padding10) var(--padding18);
+}
+
+/*-------====== BUTTON START AND END ICON ========-------*/
+:global(.MuiButton-root).buttonMui :global(.MuiButton-startIcon){
+    margin-right: var(--margin6);
+}
+
+:global(.MuiButton-root).buttonMui.button-sm :global(.MuiButton-endIcon){
+    margin-left: var(--margin6);
+}
+
+
+:global(.MuiButton-root).buttonMui.button-sm :global(.MuiButton-startIcon) svg,
+:global(.MuiButton-root).buttonMui.button-sm :global(.MuiButton-endIcon) svg{
+    width: var(--width14);
+    height: var(--height14);
+}
+
+:global(.MuiButton-root).buttonMui.button-md :global(.MuiButton-startIcon) svg,
+:global(.MuiButton-root).buttonMui.button-md :global(.MuiButton-endIcon) svg{
+    width: var(--width16);
+    height: var(--height16);
+}
+
+:global(.MuiButton-root).buttonMui.button-lg :global(.MuiButton-startIcon) svg,
+:global(.MuiButton-root).buttonMui.button-lg :global(.MuiButton-endIcon) svg{
+    width: var(--width18);
+    height: var(--height18);
+}

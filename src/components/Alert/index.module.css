@@ -1,0 +1,148 @@
+:global(.MuiAlert-root).alertMui{
+    transition: all 0.3s ease-in-out;
+    border-radius: var(--borderRadius8);
+}
+
+:global(.MuiAlert-root).alertMui.alert-rounded{
+    border-radius: var(--borderRadius50);
+}
+
+/*--------------========= AlertGroup Badges Size - sm, md ============------*/
+:global(.MuiAlert-root).alertMui.alert-sm{
+    padding: var(--padding2) var(--padding14);
+    font-size: var(--fontSize12);
+}
+
+:global(.MuiAlert-root).alertMui.alert-sm :global(.MuiAlertTitle-root){
+    font-size: var(--fontSize14);
+    margin-bottom: var(--margin4);
+}
+
+:global(.MuiAlert-root).alertMui.alert-sm :global(.MuiAlert-icon){
+    margin-right:var(--margin10);
+    padding: var(--padding8) var(--padding0);
+}
+
+:global(.MuiAlert-root).alertMui.alert-sm :global(.MuiAlert-icon) svg{
+    width: var(--width16);
+    height: var(--height16);
+}
+
+:global(.MuiAlert-root).alertMui.alert-sm :global(.MuiAlert-action) button svg{
+    width: var(--width16);
+    height: var(--height16);
+}
+
+:global(.MuiAlert-root).alertMui.alert-md{
+    padding: var(--padding4) var(--padding16);
+    font-size: var(--fontSize14);
+}
+
+:global(.MuiAlert-root).alertMui.alert-md :global(.MuiAlertTitle-root){
+    font-size: var(--fontSize16);
+    margin-bottom: var(--margin4);
+}
+
+:global(.MuiAlert-root).alertMui.alert-md :global(.MuiAlert-icon){
+    padding: var(--padding8) var(--padding0);
+}
+
+:global(.MuiAlert-root).alertMui.alert-md :global(.MuiAlert-icon) svg{
+    width: var(--width20);
+    height: var(--height20);
+}
+
+:global(.MuiAlert-root).alertMui :global(.MuiAlert-action){
+    align-items: center;
+    padding-top: var(--padding2);
+    padding-bottom: var(--padding2);
+}
+
+/*--------------========= Alert varaint - Standard with color ============------*/
+:global(.MuiAlert-root).alertMui.alert-standard-success{
+    background-color: var(--successHover);
+    color: var(--success);
+}
+
+:global(.MuiAlert-root).alertMui.alert-standard-info{
+    background-color: var(--infoHover);
+    color: var(--info);
+}
+
+:global(.MuiAlert-root).alertMui.alert-standard-error{
+    background-color: var(--errorHover);
+    color: var(--error);
+}
+
+:global(.MuiAlert-root).alertMui.alert-standard-warning{
+    background-color: var(--warningHover);
+    color: var(--warning);
+}
+
+:global(.MuiAlert-root).alertMui.alert-standard-success :global(.MuiAlert-icon),
+:global(.MuiAlert-root).alertMui.alert-outlined-success :global(.MuiAlert-icon){
+    color: var(--success);
+}
+
+:global(.MuiAlert-root).alertMui.alert-standard-info :global(.MuiAlert-icon),
+:global(.MuiAlert-root).alertMui.alert-outlined-info :global(.MuiAlert-icon){
+    color: var(--info);
+}
+
+:global(.MuiAlert-root).alertMui.alert-standard-error :global(.MuiAlert-icon),
+:global(.MuiAlert-root).alertMui.alert-outlined-error :global(.MuiAlert-icon){
+    color: var(--error);
+}
+
+:global(.MuiAlert-root).alertMui.alert-standard-warning :global(.MuiAlert-icon),
+:global(.MuiAlert-root).alertMui.alert-outlined-warning :global(.MuiAlert-icon){
+    color: var(--warning);
+}
+
+/*--------------========= Alert varaint - Filled with color ============------*/
+:global(.MuiAlert-root).alertMui.alert-filled{
+    color: var(--white);
+}
+
+:global(.MuiAlert-root).alertMui.alert-filled :global(.MuiAlert-icon){
+    color: var(--white);
+}
+
+:global(.MuiAlert-root).alertMui.alert-filled-success{
+    background-color: var(--success);
+}
+
+:global(.MuiAlert-root).alertMui.alert-filled-info{
+    background-color: var(--info);
+}
+
+:global(.MuiAlert-root).alertMui.alert-filled-error{
+    background-color: var(--error);
+}
+
+:global(.MuiAlert-root).alertMui.alert-filled-warning{
+    background-color: var(--warning);
+}
+
+/*--------------========= Alert varaint - Outlined with color ============------*/
+:global(.MuiAlert-root).alertMui.alert-outlined{
+    border-width: var(--borderWidth1);
+    border-style: var(--borderStyleSolid);
+    background-color: var(--white);
+}
+
+:global(.MuiAlert-root).alertMui.alert-outlined-success{
+    color: var(--success);
+}
+
+:global(.MuiAlert-root).alertMui.alert-outlined-info{
+    color: var(--info);
+}
+
+:global(.MuiAlert-root).alertMui.alert-outlined-error{
+    color: var(--error);
+}
+
+:global(.MuiAlert-root).alertMui.alert-outlined-warning{
+    color: var(--warning);
+}

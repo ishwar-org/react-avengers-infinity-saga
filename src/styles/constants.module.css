@@ -1,0 +1,302 @@
+:root{
+    /* -----======= Colors =======------*/
+    --white: #ffffff;
+    --primary: #6F00FF;
+    --secondary: #a19f9a;
+    --danger: #ff0000;
+    --info: #4fa9fc;
+    --warning: #FFA500;
+    --greySecondary: #676a6c;
+    --success: #00A550;
+    --error: #ff0000;
+
+    --primaryHover: rgb(111 0 255 / 12%);
+    --secondaryHover: rgb(161 159 154 / 12%);
+    --dangerHover: rgb(255 0 0 / 12%);
+    --infoHover: rgb(79 169 252 / 12%);
+    --warningHover: rgb(255 165 0 / 12%);
+    --successHover: rgb(0 165 80 / 12%);
+    --errorHover: rgb(255 0 0 / 12%);
+
+    --backgroundTransparent: transparent;
+    --offWhiteBg: rgba(0, 0, 0, 0.06);
+
+    --primaryBorder: rgb(111 0 255 / 22%);
+    --secondaryBorder: rgb(161 159 154 / 22%);
+    --dangerBorder: rgb(255 0 0 / 22%);
+    --infoHover: rgb(79 169 252 / 22%);
+    --warningBorder: rgb(255 165 0 / 22%);
+    --successHover: rgb(0 165 80 / 22%);
+    --errorBorder: rgb(255 0 0 / 22%);
+    --greySecondaryBorder: rgb(103 106 108 / 22%);
+
+    --primaryHover60: rgb(111 0 255 / 60%);
+    --successHover60: rgb(0 165 80 / 60%);
+
+    --neutral50: #f9fafb;
+    --neutral100: #f2f4f7;
+    --neutral200: #d0d5dd;
+    --neutral300: #98a2b3;
+    --neutral400: #667085;
+    --neutral500: #344054;
+    --neutral600: #101828;
+
+
+    --error600: #cb1e1d;
+
+
+    --green-bright: #00d407;
+    --green-light: #63ca81;
+
+    /* -----======= Gradient Colors =======------*/
+    --primaryPurpleGradient: linear-gradient(90deg, hsla(295, 100%, 84%, 1) 0%, hsla(238, 100%, 71%, 1) 100%);
+    --primaryGreenGradient: linear-gradient(90deg, hsla(145, 83%, 74%, 1) 0%, hsla(204, 77%, 76%, 1) 100%);
+    --primaryBlueGradient: linear-gradient(90deg, hsla(239, 100%, 67%, 1) 0%, hsla(187, 100%, 89%, 1) 100%);
+    --primaryRedGradient: linear-gradient(90deg, hsla(333, 100%, 53%, 1) 0%, hsla(33, 94%, 57%, 1) 100%);
+    --primaryDarkGreenGradient: linear-gradient(90deg, hsla(148, 89%, 78%, 1) 0%, hsla(210, 81%, 22%, 1) 100%);
+    --warningGradient: linear-gradient(90deg, hsl(38.82deg 100% 50% / 58.04%) 0%, hsl(38.94deg 97.61% 50.78% / 87.06%) 100%);
+
+    /* -------======== opacity =========--------*/
+    --opacity10: 0.1;
+    --opacity20: 0.2;
+    --opacity30: 0.3;
+    --opacity40: 0.4;
+    --opacity50: 0.5;
+    --opacity60: 0.6;
+    --opacity70: 0.7;
+    --opacity80: 0.8;
+    --opacity90: 0.9;
+    --opacity100: 1;
+
+    /* -------======== font size =========--------*/
+    --fontSize8: 8px;
+    --fontSize10: 10px;
+    --fontSize12: 12px;
+    --fontSize14: 14px;
+    --fontSize16: 16px;
+    --fontSize18: 18px;
+    --fontSize20: 20px;
+    --fontSize22: 22px;
+    --fontSize24: 24px;
+    --fontSize26: 26px;
+    --fontSize28: 28px;
+    --fontSize30: 30px;
+
+    /* -------======== font weight =========--------*/
+    --fontWeight400: 400;
+    --fontWeight500: 500;
+    --fontWeight600: 600;
+    --fontWeight700: 700;
+    --fontWeight800: 800;
+    --fontWeight900: 900;
+    --fontWeightBold: bold;
+
+    /* -------======== Padding =========--------*/
+    --padding0: 0;
+    --padding2: 2px;
+    --padding4: 4px;
+    --padding6: 6px;
+    --padding8: 8px;
+    --padding10: 10px;
+    --padding12: 12px;
+    --padding14: 14px;
+    --padding15: 15px;
+    --padding16: 16px;
+    --padding18: 18px;
+    --padding20: 20px;
+    --padding22: 22px;
+    --padding24: 24px;
+    --padding26: 26px;
+    --padding28: 28px;
+    --padding30: 30px;
+    --padding32: 32px;
+    --padding34: 34px;
+    --padding36: 36px;
+    --padding38: 38px;
+    --padding40: 40px;
+    --padding42: 42px;
+    --padding44: 44px;
+    --padding46: 46px;
+    --padding48: 48px;
+    --padding50: 50px;
+    --padding52: 52px;
+    --padding54: 54px;
+    --padding56: 56px;
+    --padding58: 58px;
+    --padding60: 60px;
+
+    /* -------======== margin =========--------*/
+    --margin0: 0;
+    --margin2: 2px;
+    --margin3: 3px;
+    --margin4: 4px;
+    --margin6: 6px;
+    --margin8: 8px;
+    --margin10: 10px;
+    --margin12: 12px;
+    --margin14: 14px;
+    --margin16: 16px;
+    --margin18: 18px;
+    --margin20: 20px;
+    --margin22: 22px;
+    --margin24: 24px;
+    --margin26: 26px;
+    --margin28: 28px;
+    --margin30: 30px;
+    --margin32: 32px;
+    --margin34: 34px;
+    --margin36: 36px;
+    --margin38: 38px;
+    --margin40: 40px;
+    --margin42: 42px;
+    --margin44: 44px;
+    --margin46: 46px;
+    --margin48: 48px;
+    --margin50: 50px;
+    --margin52: 52px;
+    --margin54: 54px;
+    --margin56: 56px;
+    --margin58: 58px;
+    --margin60: 60px;
+
+    /* -------======== border-radius =========--------*/
+    --borderRadius4: 4px;
+    --borderRadius6: 6px;
+    --borderRadius8: 8px;
+    --borderRadius10: 10px;
+    --borderRadius12: 12px;
+    --borderRadius14: 14px;
+    --borderRadius16: 16px;
+    --borderRadius18: 18px;
+    --borderRadius20: 20px;
+    --borderRadius22: 22px;
+    --borderRadius24: 24px;
+    --borderRadius26: 26px;
+    --borderRadius28: 28px;
+    --borderRadius30: 30px;
+    --borderRadius50: 50px;
+
+    /* -------======== border width =========--------*/
+    --borderWidth1: 1px;
+    --borderWidth2: 2px;
+
+    /*-------========= width ==========---------*/
+    --width8: 8px;
+    --width10: 10px;
+    --width12: 12px;
+    --width14: 14px;
+    --width16: 16px;
+    --width18: 18px;
+    --width20: 20px;
+    --width22: 22px;
+    --width24: 24px;
+    --width26: 26px;
+    --width28: 28px;
+    --width30: 30px;
+    --width32: 32px;
+    --width34: 34px;
+    --width36: 36px;
+    --width38: 38px;
+    --width40: 40px;
+    --width42: 42px;
+    --width44: 44px;
+    --width46: 46px;
+    --width48: 48px;
+    --width50: 50px;
+    --width52: 52px;
+    --width54: 54px;
+    --width56: 56px;
+    --width58: 58px;
+    --width60: 60px;
+    --width62: 62px;
+    --width64: 64px;
+    --width68: 68px;
+    --width70: 70px;
+    --width72: 72px;
+    --width74: 74px;
+    --width76: 76px;
+    --width78: 78px;
+    --width80: 80px;
+    --width82: 82px;
+    --width84: 84px;
+    --width86: 86px;
+    --width90: 90px;
+    --width92: 92px;
+    --width450: 450px;
+    --fullWidth: 100%;
+
+    /*-------========= height ==========---------*/
+    --height8: 8px;
+    --height10: 10px;
+    --height12: 12px;
+    --height16: 16px;
+    --height18: 18px;
+    --height20: 20px;
+    --height22: 22px;
+    --height24: 24px;
+    --height26: 26px;
+    --height28: 28px;
+    --height30: 30px;
+    --height32: 32px;
+    --height34: 34px;
+    --height36: 36px;
+    --height38: 38px;
+    --height40: 40px;
+    --height42: 42px;
+    --height44: 44px;
+    --height46: 46px;
+    --height48: 48px;
+    --height50: 50px;
+    --height52: 52px;
+    --height54: 54px;
+    --height56: 56px;
+    --height58: 58px;
+    --height60: 60px;
+    --height62: 62px;
+    --height64: 64px;
+    --height68: 68px;
+    --height70: 70px;
+    --height72: 72px;
+    --height74: 74px;
+    --height76: 76px;
+    --height78: 78px;
+    --height80: 80px;
+    --height82: 82px;
+    --height84: 84px;
+    --height86: 86px;
+    --height90: 90px;
+    --height92: 92px;
+    --height104: 104px;
+    --height450: 450px;
+    --fullHeight: 100%;
+    --fullHeightVh: 100vh;
+
+    /* -------======== border style =========--------*/
+    --borderStyleSolid: solid;
+    --borderStyleDotted: dotted;
+    --borderStyleDashed: dashed;
+
+    /* -------======== cursor =========--------*/
+    --cursorPointer: pointer;
+    --cursorNotAllowed: not-allowed;
+    --cursorDefault: default;
+
+    /* -------======== line height =========--------*/
+    --lineHeight20: 20px;
+    --lineHeight22: 22px;
+
+    /* -------======== transisition duration =========--------*/
+    --durations3s: 0.3s;
+    --durations5s: 0.5s;
+
+    /* -------======== transisition effect =========--------*/
+    --effectEaseIn: ease-in;
+    --effectEaseOut: ease-out;
+    --effectEaseInOut: ease-in-out;
+
+    /*---------======= gap ========-------*/
+    --gap8: 8px;
+
+    /*-------======== box shadow =========---------*/
+    --boxShadowSeondary: rgb(143 142 142 / 15%) 0px -1px 1px -1px, rgb(143 142 142 / 15%) 0px 1px 9px 0px, rgb(143 142 142 / 15%) 0px 1px 4px 0px;
+}

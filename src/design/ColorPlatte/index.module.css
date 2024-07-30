@@ -1,0 +1,24 @@
+.colorContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.colorBox{
+    width:150px;
+    height:60px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+
+.colorBox:last-of-type{
+    margin-bottom: 0;
+    margin-right: 0;
+}

@@ -1,0 +1,14 @@
+.tabs-vertical{
+    display: flex;
+    flex-direction: row;
+    height:124px;
+}
+
+.tab-horizontal{
+    display: flex;
+    flex-direction: column;
+}
+
+.tabPanel{
+    padding: var(--padding15);
+}

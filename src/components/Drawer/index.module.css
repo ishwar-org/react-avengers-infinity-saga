@@ -1,0 +1,48 @@
+.drawer :global(.MuiDrawer-paper){
+    overflow-y:unset;
+}
+
+.drawerTitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:var(--padding15);
+    box-shadow: var(--boxShadowSeondary);
+}
+
+.actionIconHeader{
+    display: flex;
+    gap:var(--gap8);
+}
+
+.drawerContent{
+    padding: var(--padding20) var(--padding15);
+    overflow-y: auto;
+}
+
+.drawerContent::-webkit-scrollbar {
+    display: none;
+}
+
+.drawercontent-position-top, .drawercontent-position-bottom{
+    height: var(--height450);
+}
+
+.drawercontent-position-left, .drawercontent-position-right{
+    height: calc(var(--fullHeightVh) - var(--height104));
+}
+
+.drawer .backArrow{
+    width: var(--width20);
+    height: var(--height20);
+}
+
+.drawer :global(.MuiDrawer-paperAnchorLeft), :global(.MuiDrawer-paperAnchorRight){
+    max-width:var(--width450);
+    width:var(--fullWidth);
+}
+
+.drawer :global(.MuiDrawer-paperAnchorTop), :global(.MuiDrawer-paperAnchorBottom){
+    width:var(--fullWidth);
+}
+

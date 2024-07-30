@@ -1,0 +1,77 @@
+.main-textarea-container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+}
+
+.textarea-label{
+    font-size: var(--fontSize14);
+    margin-bottom: var(--margin6);
+    color: var(--greySecondary);
+}
+
+.textareaLabelError{
+    color: var(--danger);
+}
+
+.textareaAutoSize{
+    padding: var(--padding18) var(--padding58) var(--padding14) var(--padding18);
+    transition: all 0.5s ease-in-out;
+    min-height: 30px;
+}
+
+.textareaAutoSize:focus-visible{
+    outline: none;
+}
+
+.textareaAutoSize:hover, .textareaAutoSize:focus{
+    border: 1px solid var(--primaryHover60);
+}
+
+.textarea-autosize-filled{
+    background-color: var(--offWhiteBg);
+    border: 1px solid var(--backgroundTransparent);
+}
+
+.textarea-autosize-outlined{
+    background-color: var(--white);
+    border: 1px solid var(--greySecondaryBorder);
+}
+
+.textarea-autosize-filled:hover, .textarea-autosize-filled:focus{
+    border: 1px solid var(--primaryHover60);
+}
+
+.textarea-autosize-error, .textarea-autosize-error:hover{
+    border: 1px solid var(--danger);
+}
+
+.textarea-autosize-normal{
+    border-radius: var(--borderRadius6);
+}
+
+.textarea-autosize-rounded{
+    border-radius: var(--borderRadius12);
+}
+
+.textareaAutoSizeIcon{
+    position: absolute;
+    right: 2%;
+}
+
+.textarea-error-icon{
+    top: 62%;
+}
+
+.textarea-success-icon{
+    top: 64%;
+}
+
+.errorIcon{
+    color: var(--danger);
+}
+
+.successIcon{
+    color: var(--success);
+}

@@ -1,0 +1,26 @@
+.radioFormControl .radioLabel, .radioFormControl .radioLabel:global(.Mui-focused){
+    font-size: var(--fontSize20);
+    color: var(--neutral400);
+}
+
+
+.radioContainer .radioControlLabel{
+    font-size: var(--fontSize16);
+    color: var(--neutral400);
+}
+
+.radio-control-primary :global(.MuiRadio-root),
+.radio-control-primary :global(.MuiRadio-root.Mui-checked){
+    color: var(--primary);
+}
+
+.radio-control-success :global(.MuiRadio-root),
+.radio-control-success :global(.MuiRadio-root.Mui-checked){
+    color: var(--success);
+}
+
+.radio-control-grey :global(.MuiRadio-root),
+.radio-control-grey :global(.MuiRadio-root.Mui-checked){
+    color: var(--greySecondary);
+}
+
