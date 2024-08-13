@@ -4,23 +4,27 @@
   "version": "0.0.1",
   "type": "module",
   "files": [
-    "dist"
+    "dist",
+    "src"
   ],
-  "main": "./dist/react-avengers-infinity-saga.umd.js",
-  "module": "./dist/react-avengers-infinity-saga.es.js",
-  "types": "./dist/index.d.ts",
+  "main": "dist/react-avengers-infinity-saga.umd.js",
+  "module": "dist/react-avengers-infinity-saga.es.js",
+  "types": "dist/index.d.ts",
   "export": {
     ".": {
-      "import": "./dist/react-avengers-infinity-saga.es.js",
-      "require": "./dist/react-avengers-infinity-saga.umd.js"
+      "import": "dist/react-avengers-infinity-saga.es.js",
+      "require": "dist/react-avengers-infinity-saga.umd.js"
     },
-    "./style": "./dist/style.css"
+    "./style": "dist/style.css"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/ishwar-org/react-avengers-infinity-saga.git"
   },
-  "keywords": ["React", "TypScript, Material-UI"],
+  "keywords": [
+    "React",
+    "TypScript, Material-UI"
+  ],
   "author": "Ishwar Deoolkar",
   "license": "MIT License",
   "bugs": {
@@ -29,12 +33,13 @@
   "homepage": "https://github.com/ishwar-17/react-avengers-infinity-saga#readme",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc -p tsconfig.app.json && vite build",
+    "build:types": "tsc --project tsconfig.app.json && vite build",
     "commit": "git-cz",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
+    "build-storybook": "storybook build ",
     "semantic-release": "semantic-release"
   },
   "dependencies": {
@@ -43,8 +48,7 @@
     "@mui/icons-material": "^5.16.5",
     "@mui/material": "^5.16.5",
     "react-feather": "^2.0.10",
-    "semantic-release": "^24.0.0",
-    "vite-plugin-static-copy": "^1.0.6"
+    "semantic-release": "^24.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
@@ -62,6 +66,7 @@
     "@storybook/react": "^8.2.6",
     "@storybook/react-vite": "^8.2.6",
     "@storybook/test": "^8.2.6",
+    "@types/glob": "^8.1.0",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@typescript-eslint/eslint-plugin": "^7.15.0",
@@ -75,22 +80,29 @@
     "eslint-plugin-storybook": "^0.8.0",
     "semantic-release": "^24.0.0",
     "storybook": "^8.2.6",
-    "typescript": "^5.2.2",
-    "vite": "^5.3.4",
-    "vite-plugin-dts": "^4.0.0-beta.1"
+    "typescript": "^5.5.4",
+    "vite": "^5.3.5",
+    "vite-plugin-dts": "^4.0.0-beta.2",
+    "vite-plugin-static-copy": "^1.0.6"
   },
   "peerDependencies": {
     "classnames": "^2.5.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
+  "overrides": {
+    "minimatch": "5.1.2",
+    "glob": "8.1.0"
+  },
   "config": {
     "commitizen": {
       "path": "cz-conventional-changelog"
     }
   },
-  "release":{
-    "branches": ["main"],
+  "release": {
+    "branches": [
+      "main"
+    ],
     "repositoryUrl": "https://github.com/ishwar-org/react-avengers-infinity-saga.git",
     "plugins": [
       "@semantic-release/commit-analyzer",

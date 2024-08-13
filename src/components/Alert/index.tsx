@@ -1,6 +1,6 @@
 import { Alert as AlertMUI, AlertTitle } from '@mui/material';
 import classNames from 'classnames';
-import { ReactNode } from 'react';
+import React, { ReactNode } from 'react';
 import { AlertCircle, AlertTriangle, CheckCircle, Info } from '../Icons';
 import styles from './index.module.css';
 
@@ -18,7 +18,7 @@ export type AlertProps = {
     onClose?: () => void;
 }
 
-const Alert = ({
+const Alert: React.FC<AlertProps> = ({
     className,
     "data-testid": dataTestId,
     color = "success",
@@ -30,7 +30,7 @@ const Alert = ({
     description = "",
     onClose,
     ...rest
-}: AlertProps) => {
+}) => {
     const colorWithIcon = {
         success: <CheckCircle />,
         info: <Info />,

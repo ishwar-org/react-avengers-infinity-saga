@@ -24,7 +24,7 @@ export type TabsProps = {
     "data-testid"?: string;
 }
 
-const Tabs = ({
+const Tabs: React.FC<TabsProps> = ({
     className,
     activeTab,
     onChange,
@@ -34,7 +34,7 @@ const Tabs = ({
     centered = false,
     disableRipple = false,
     "data-testid": dataTestId
-}: TabsProps) => {
+}) => {
 
     return (
         <Box className={classNames(styles[`tabs-${orientation}`])}>

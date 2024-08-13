@@ -2,28 +2,11 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { ChangeEvent, useState } from 'react';
 import Switch, { SwitchProps } from '.';
 
-const meta = {
+const meta: Meta<SwitchProps> = {
   title: "Components/Form/Switch",
   component: Switch,
   tags: ["autodocs"],
-} satisfies Meta<typeof Switch>;
-
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-const StoryContainer = (props: SwitchProps) => {
-  const [checked, setChecked] = useState(false);
-  return (
-    <Switch
-      {...props}
-      checked={checked || props.checked}
-      onChange={(e) => setChecked(e.target.checked)}
-    />
-  );
-};
-
-const storiesArgTypes = {
-	argTypes: {
+  argTypes: {
     label: {
       name: "label",
       control: {
@@ -35,7 +18,7 @@ const storiesArgTypes = {
       },
       options: ["", "label"],
       mapping: {
-        label: "Eligbble",
+        label: "Eligible",
       },
     },
     color: {
@@ -49,13 +32,36 @@ const storiesArgTypes = {
           warning: "Warning"
         }
       },
-      options: ["primary", "secondary", "success","warning"],
+      options: ["primary", "secondary", "success", "warning"],
     },
-  }
+  },
 };
 
+export default meta;
+type Story = StoryObj<SwitchProps>;
+
+const StoryContainer: React.FC<SwitchProps> = (args) => {
+  const [checked, setChecked] = useState(args.checked || false);
+  
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+    setChecked(e.target.checked);
+    if (args.onChange) {
+      args.onChange(e); // Call the onChange prop if provided
+    }
+  };
+
+  return (
+    <Switch
+      {...args}
+      checked={checked}
+      onChange={handleChange}
+    />
+  );
+};
+
+// Default story
 export const Default: Story = {
-  render: StoryContainer,
+  render: (args) => <StoryContainer {...args} id={args.id} name={args.name} checked={args.checked} />,
   args: {
     id: "default",
     name: 'default',
@@ -65,10 +71,11 @@ export const Default: Story = {
     disableRipple: false,
     color: 'primary',
     inputProps: {
-      'aria-label': 'controlled'
+      'aria-label': 'controlled',
     },
     "data-testid": "test-switch",
-    onChange: (e: ChangeEvent<HTMLInputElement>) => { alert(e.target.checked)},
+    onChange: (e: ChangeEvent<HTMLInputElement>) => {
+      alert(`Switch is now ${e.target.checked ? 'ON' : 'OFF'}`);
+    },
   },
-  ...storiesArgTypes
 };

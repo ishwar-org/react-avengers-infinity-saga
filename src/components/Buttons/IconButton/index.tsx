@@ -1,6 +1,6 @@
 import { IconButton as IconButtonMUI } from '@mui/material';
 import classNames from 'classnames';
-import { ComponentProps, MouseEvent, ReactNode } from 'react';
+import React, { ComponentProps, MouseEvent, ReactNode } from 'react';
 import styles from './index.module.css';
 
 type MuiProps = Partial<
@@ -19,7 +19,7 @@ export type IconButtonProps = MuiProps &{
 	children?: ReactNode
 }
 
-const IconButton = ({
+const IconButton: React.FC<IconButtonProps> = ({
 	className,
 	"data-testid": dataTestId,
 	size = "md",
@@ -30,7 +30,7 @@ const IconButton = ({
 	onClick,
 	children,
 	...rest
-}: IconButtonProps) => {
+}) => {
 	return (
 		<IconButtonMUI
 			{...rest}

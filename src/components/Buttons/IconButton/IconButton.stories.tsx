@@ -2,27 +2,13 @@ import type { Meta, StoryObj } from '@storybook/react';
 import IconButton, { IconButtonProps } from '.';
 import { Trash2 } from '../../Icons';
 
-const meta = {
+const meta: Meta<IconButtonProps> = {
     title: "Components/Buttons/IconButton",
     component: IconButton,
     parameters: {
       layout: 'centered',
     },
     tags: ["autodocs"],
-} satisfies Meta<typeof IconButton>;
-  
-export default meta;
-type Story = StoryObj<typeof meta>;
-  
-const StoryContainer = (props: IconButtonProps) => {
-    return (
-        <IconButton
-            {...props}
-        />
-    );
-};
-
-const storiesArgTypes = {
     argTypes: {
       variant: {
         name: "variant",
@@ -64,7 +50,17 @@ const storiesArgTypes = {
       },
     }
 };
-
+  
+export default meta;
+type Story = StoryObj<IconButtonProps>;
+  
+const StoryContainer = (props: IconButtonProps) => {
+    return (
+        <IconButton
+            {...props}
+        />
+    );
+};
 
 export const Default: Story = {
     render: StoryContainer,
@@ -75,5 +71,4 @@ export const Default: Story = {
       children: <Trash2 />,
       disabled: false,
     },
-    ...storiesArgTypes
 };

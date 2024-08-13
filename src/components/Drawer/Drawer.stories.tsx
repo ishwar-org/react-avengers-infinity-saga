@@ -5,14 +5,29 @@ import Button from '../Buttons/Button';
 import IconButton from '../Buttons/IconButton';
 import { Edit2, Trash2, Eye } from '../Icons';
 
-const meta = {
+const meta: Meta<DrawerProps> = {
   title: "Components/Drawer",
   component: Drawer,
   tags: ["autodocs"],
-} satisfies Meta<typeof Drawer>;
+  argTypes: {
+    anchor: {
+      name: "anchor",
+      control: {
+        type: "radio",
+        labels: {
+          top: "Top",
+          bottom: "Bottom",
+          left: "Left",
+          right: "Right"
+        },
+      },
+      options: ["top", "bottom", "left", "right"],
+    },
+  }
+};
 
 export default meta;
-type Story = StoryObj<typeof meta>;
+type Story = StoryObj<DrawerProps>;
 
 const StoryContainer = (props: DrawerProps) => {
   const [open, setOpen] = useState<boolean>(false);
@@ -41,24 +56,6 @@ const StoryContainer = (props: DrawerProps) => {
         </Drawer>
     </>
   );
-};
-
-const storiesArgTypes = {
-    argTypes: {
-      anchor: {
-        name: "anchor",
-        control: {
-          type: "radio",
-          labels: {
-            top: "Top",
-            bottom: "Bottom",
-            left: "Left",
-            right: "Right"
-          },
-        },
-        options: ["top", "bottom", "left", "right"],
-      },
-    }
 };
 
 export const Default: Story = {
@@ -96,5 +93,4 @@ export const Default: Story = {
             </div>
         )
     },
-    ...storiesArgTypes
 }

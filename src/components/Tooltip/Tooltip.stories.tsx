@@ -5,18 +5,41 @@ import IconButton from '../Buttons/IconButton';
 import { Check, Info } from '../Icons';
 import styles from './index.module.css';
 
-const meta = {
+const meta: Meta<TooltipProps> = {
   title: "Components/Tooltip",
   component: Tooltip,
   parameters: {
     layout: 'centered',
   },
   tags: ["autodocs"],
-} satisfies Meta<typeof Tooltip>;
+  argTypes: {
+    placement: {
+      name: "placement",
+      control: {
+        type: "radio",
+        labels: {
+          "top-start": "Top Start",
+          top: "Top",
+          "top-end": "Top End",
+          "right-start": "Right Start",
+          right: "Right",
+          "right-end": "Right End",
+          "bottom-start": "Bottom Start",
+          bottom: "Bottom",
+          "bottom-end": "Bottom End",
+          "left-start": "Left Start",
+          left: "Left",
+          "left-end": "Left End"
+        }
+      },
+      options: ["top-start", "top", "top-end", "right-start", "right", "right-end", "bottom-start", "bottom", "bottom-end", "left-start", "left", "left-end"],
+    },
+  }
+};
 
 
 export default meta;
-type Story = StoryObj<typeof meta>;
+type Story = StoryObj<TooltipProps>;
 
 const StoryContainer = (props: TooltipProps) => {
     return (
@@ -30,32 +53,6 @@ const StoryContainer = (props: TooltipProps) => {
     )
 };
 
-const storiesArgTypes = {
-    argTypes: {
-      placement: {
-        name: "placement",
-        control: {
-          type: "radio",
-          labels: {
-            "top-start": "Top Start",
-            top: "Top",
-            "top-end": "Top End",
-            "right-start": "Right Start",
-            right: "Right",
-            "right-end": "Right End",
-            "bottom-start": "Bottom Start",
-            bottom: "Bottom",
-            "bottom-end": "Bottom End",
-            "left-start": "Left Start",
-            left: "Left",
-            "left-end": "Left End"
-          }
-        },
-        options: ["top-start", "top", "top-end", "right-start", "right", "right-end", "bottom-start", "bottom", "bottom-end", "left-start", "left", "left-end"],
-      },
-    }
-};
-
 export const Default: Story = {
     render: StoryContainer,
     args: {
@@ -64,7 +61,6 @@ export const Default: Story = {
         placement: 'bottom',
         open:true
     },
-    ...storiesArgTypes
 };
 
 export const WithArrow: Story = {
@@ -75,7 +71,6 @@ export const WithArrow: Story = {
         placement: 'bottom',
         arrow: true
     },
-    ...storiesArgTypes
 };
 
 export const WithFollowCursor: Story = {
@@ -86,7 +81,6 @@ export const WithFollowCursor: Story = {
         placement: 'bottom',
         followCursor: true
     },
-    ...storiesArgTypes
 };
 
 export const WithText: Story = {
@@ -96,7 +90,6 @@ export const WithText: Story = {
         children: <span>Info</span>,
         placement: 'top',
     },
-    ...storiesArgTypes
 };
 
 export const WithButton: Story = {
@@ -106,6 +99,5 @@ export const WithButton: Story = {
         children: <Button color="primary" variant="contained">Button</Button>,
         placement: 'top',
     },
-    ...storiesArgTypes
 };
 

@@ -3,28 +3,10 @@ import { useState } from 'react';
 import Tabs, { TabsProps } from '.';
 import Button from '../Buttons/Button';
 
-const meta = {
+const meta: Meta<TabsProps> = {
     title: "Components/Tabs",
     component: Tabs,
     tags: ["autodocs"],
-  } satisfies Meta<typeof Tabs>;
-  
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-const StoryContainer = (props: TabsProps) => {
-    const { activeTab } = props;
-    const [currentTab, setCurrentTab] = useState(activeTab);
-    return (
-        <Tabs
-            {...props}
-            activeTab={currentTab}
-            onChange={setCurrentTab}
-        />
-    )
-};
-
-const storiesArgTypes = {
     argTypes: {
         orientation: {
             name: "orientation",
@@ -50,6 +32,21 @@ const storiesArgTypes = {
             options: ['standard', 'scrollable', 'fullWidth'],
         }
     }
+};
+  
+export default meta;
+type Story = StoryObj<typeof meta>;
+
+const StoryContainer = (props: TabsProps) => {
+    const { activeTab } = props;
+    const [currentTab, setCurrentTab] = useState(activeTab);
+    return (
+        <Tabs
+            {...props}
+            activeTab={currentTab}
+            onChange={setCurrentTab}
+        />
+    )
 };
 
 export const Default: Story = {
@@ -112,6 +109,5 @@ export const Default: Story = {
         orientation: 'vertical',
         centered: false,
         variant: 'scrollable',
-    },
-    ...storiesArgTypes
+    }
 };

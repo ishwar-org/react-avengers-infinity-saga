@@ -1,6 +1,6 @@
 import { InputAdornment, TextareaAutosize as BaseTextareaAutosize } from "@mui/material";
 import classNames from "classnames";
-import {
+import React, {
     ChangeEventHandler,
     FocusEventHandler,
     ReactNode,

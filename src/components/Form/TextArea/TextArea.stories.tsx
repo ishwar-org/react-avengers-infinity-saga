@@ -1,25 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import TextArea from '.';
+import TextArea, { TextAreaProps } from '.';
 
-const meta = {
+const meta: Meta<TextAreaProps> = {
   title: "Components/Form/TextArea",
   component: TextArea,
   tags: ["autodocs"],
-} satisfies Meta<typeof TextArea>;
-
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-const StoryContainer = (props: any) => {
-    return (
-      <TextArea
-        {...props}
-      />
-    );
-};
-
-const storiesArgTypes = {
   argTypes: {
     variant: {
       name: "variant",
@@ -58,7 +43,19 @@ const storiesArgTypes = {
       },
     },
   }
-}
+};
+
+export default meta;
+type Story = StoryObj<TextAreaProps>;
+
+
+const StoryContainer = (props: TextAreaProps) => {
+    return (
+      <TextArea
+        {...props}
+      />
+    );
+};
 
 export const Default: Story = {
   render: StoryContainer,
@@ -73,7 +70,6 @@ export const Default: Story = {
     success: false,
     placeholder: "Enter your message here..."
   },
-  ...storiesArgTypes
 }
 
 export const Error: Story = {

@@ -1,3 +1,4 @@
+import React from 'react';
 import { AvatarGroup as AvatarGroupMUI } from '@mui/material';
 import classNames from 'classnames';
 import Avatar, { AvatarProps } from '../Avatar';
@@ -11,7 +12,7 @@ export type AvatarGroupProps = {
     size?: "xxs" | "xs" | "sm" | "md" | "lg" | "xl" | "xxl";
 }
 
-const AvatarGroup = ({
+const AvatarGroup: React.FC<AvatarGroupProps> = ({
 	className,
 	"data-testid": dataTestId,
 	avatarList,

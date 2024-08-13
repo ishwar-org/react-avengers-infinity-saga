@@ -1,24 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import TextField, { TextFieldProps } from '.';
 
-const meta = {
+const meta: Meta<TextFieldProps> = {
   title: "Components/Form/TextField",
   component: TextField,
   tags: ["autodocs"],
-} satisfies Meta<typeof TextField>;
-
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-const StoryContainer = (props: TextFieldProps) => {
-  return (
-    <TextField
-      {...props}
-    />
-  );
-};
-
-const storiesArgTypes = {
   argTypes: {
     variant: {
       name: "variant",
@@ -46,6 +32,17 @@ const storiesArgTypes = {
   }
 };
 
+export default meta;
+type Story = StoryObj<TextFieldProps>;
+
+const StoryContainer = (props: TextFieldProps) => {
+  return (
+    <TextField
+      {...props}
+    />
+  );
+};
+
 export const Default: Story = {
   render: StoryContainer,
   args: {
@@ -56,8 +53,7 @@ export const Default: Story = {
     variant:"outlined",
     placeholder: "Enter the username",
     shape: 'normal',
-  },
-  ...storiesArgTypes
+  }
 }
 
 export const Error: Story = {
@@ -72,8 +68,7 @@ export const Error: Story = {
     placeholder: "Enter the username",
     error: true,
     helperText: "Error"
-  },
-  ...storiesArgTypes
+  }
 }
 
 export const Success: Story = {
@@ -87,6 +82,5 @@ export const Success: Story = {
     shape: 'rounded',
     placeholder: "Enter the username",
     success: true,
-  },
-  ...storiesArgTypes
+  }
 }

@@ -16,7 +16,7 @@ export type TooltipProps = {
     children: ReactElement;
 }
 
-const Tooltip = ({
+const Tooltip: React.FC<TooltipProps> = ({
     className,
     title,
     placement = 'right',
@@ -28,7 +28,7 @@ const Tooltip = ({
     disableInteractive, 
     "data-testid": dataTestId,
     children
-}: TooltipProps) => {
+}) => {
     return (
         <TooltipMUI
             className={className}

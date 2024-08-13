@@ -1,6 +1,6 @@
 import { Switch as SwitchMUI, FormControlLabel } from '@mui/material';
 import classNames from 'classnames';
-import { ChangeEvent, ReactNode, ComponentProps } from 'react';
+import React, { ChangeEvent, ReactNode, ComponentProps } from 'react';
 import styles from './index.module.css';
 
 type SwitchMuiProps = Partial<Omit<ComponentProps<typeof SwitchMUI>, "color" | "size">>;
@@ -9,13 +9,13 @@ type SwitchInputProps = {
     'aria-label'?: string;
 }
 
-export type SwitchProps = SwitchMuiProps & {
+export interface SwitchProps extends SwitchMuiProps{
     className?: string;
     id: string;
     name: string;
     checked: boolean;
-    disableRipple: boolean;
-    color: 'primary' | 'secondary' | 'success' | 'warning';
+    disableRipple?: boolean;
+    color?: 'primary' | 'secondary' | 'success' | 'warning';
     onChange?: (event: ChangeEvent<HTMLInputElement>) => void;
     required?: boolean;
     disabled?: boolean;
@@ -26,7 +26,7 @@ export type SwitchProps = SwitchMuiProps & {
     "data-testid"?: string;
 }
 
-const Switch = ({
+const Switch: React.FC<SwitchProps> = ({
     className,
     id,
     name,
@@ -39,7 +39,7 @@ const Switch = ({
     label = '',
     inputProps,
     "data-testid": dataTestId
-}: SwitchProps) => {
+}) => {
     const commonSwitchProps = {
         id,
         name,

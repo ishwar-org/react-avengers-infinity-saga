@@ -6,7 +6,7 @@ import {
     RadioGroup as RadioGroupMUI
 } from '@mui/material';
 import classNames from 'classnames';
-import { ChangeEvent } from 'react';
+import React, { ChangeEvent } from 'react';
 import styles from './index.module.css';
 
 type RadioOptions = {
@@ -28,7 +28,7 @@ export type RadioProps = {
     "data-testid"?: string;
 }
 
-const Radio = ({
+const Radio: React.FC<RadioProps> = ({
     className,
     horizontal = false,
     id,
@@ -39,7 +39,7 @@ const Radio = ({
     value = '',
     onChange,
     "data-testid": dataTestId
-}: RadioProps) => {
+}) => {
     return (
         <FormControl className={styles.radioFormControl}>
             {label && (<FormLabel className={styles.radioLabel} id={id} data-testid={`radio-label-${dataTestId}`}>{label}</FormLabel>)}

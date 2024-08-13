@@ -2,26 +2,11 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { Smile } from '../Icons';
 import Chip, { ChipProps } from '.';
 
-
-const meta = {
+const meta: Meta<ChipProps> = {
   title: "Components/Chip",
   component: Chip,
   tags: ["autodocs"],
-} satisfies Meta<typeof Chip>;
-
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-const StoryContainer = (props: ChipProps) => {
-  return (
-    <Chip
-      {...props}
-    />
-  );
-};
-
-const storiesArgTypes = {
-	argTypes: {
+  argTypes: {
 		size: {
 			name: "size",
 			control: {
@@ -63,6 +48,17 @@ const storiesArgTypes = {
 	}
 };
 
+export default meta;
+type Story = StoryObj<ChipProps>;
+
+const StoryContainer = (props: ChipProps) => {
+  return (
+    <Chip
+      {...props}
+    />
+  );
+};
+
 export const Default: Story = {
     render: StoryContainer,
     args: {
@@ -73,5 +69,4 @@ export const Default: Story = {
         withRound: true,
         size: "small"
     },
-    ...storiesArgTypes
 };

@@ -11,13 +11,13 @@ export type TabPanelProps = {
     "data-testid"?: string;
 }
 
-const TabPanel = ({
+const TabPanel: React.FC<TabPanelProps> = ({
     className,
     children,
     index,
     activeTab,
     "data-testid": dataTestId
-}: TabPanelProps) => {
+}) => {
     return (
         <div
             role="tabpanel"

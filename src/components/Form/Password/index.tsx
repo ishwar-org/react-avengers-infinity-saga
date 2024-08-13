@@ -1,4 +1,4 @@
-import { ChangeEvent, useMemo, useState } from 'react';
+import React, { ChangeEvent, useMemo, useState } from 'react';
 import { Grid } from '@mui/material';
 import { TextField, TextFieldProps } from '..';
 import { Check, Circle, Eye, EyeOff } from '../../Icons';
@@ -78,12 +78,12 @@ export const PASSWORD_REQUIREMENTS = (passwordLength: number) => {
     return requirements;
 }
 
-const PasswordRequirement = ({
+const PasswordRequirement: React.FC<PasswordRequirementProps> = ({
     completed,
     label,
     index,
     error,
-}: PasswordRequirementProps) => {
+}) => {
     return (
         <Grid
             data-testid="password-requirement"

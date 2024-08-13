@@ -2,25 +2,11 @@ import type { Meta, StoryObj } from '@storybook/react';
 import AvatarGroup, { AvatarGroupProps } from '.';
 
 
-const meta = {
-  title: "Components/Avatars/AvatarGroup",
-  component: AvatarGroup,
-  tags: ["autodocs"],
-} satisfies Meta<typeof AvatarGroup>;
-
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-const StoryContainer = (props: AvatarGroupProps) => {
-  return (
-    <AvatarGroup
-      {...props}
-    />
-  );
-};
-
-const storiesArgTypes = {
-	argTypes: {
+const meta: Meta<AvatarGroupProps> = {
+  	title: "Components/Avatars/AvatarGroup",
+  	component: AvatarGroup,
+  	tags: ["autodocs"],
+  	argTypes: {
 		size: {
 			name: "size",
 			control: {
@@ -38,7 +24,18 @@ const storiesArgTypes = {
 			options: ["xxs", "xs", "sm", "md", "lg", "xl", "xxl"],
 		},
 	}
-}
+};
+
+export default meta;
+type Story = StoryObj<AvatarGroupProps>;
+
+const StoryContainer = (props: AvatarGroupProps) => {
+  return (
+    <AvatarGroup
+      {...props}
+    />
+  );
+};
 
 export const Default: Story = {
 	render: StoryContainer,
@@ -53,5 +50,4 @@ export const Default: Story = {
 		],
 		max: 4,
 	},
-	...storiesArgTypes
 }

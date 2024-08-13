@@ -1,6 +1,6 @@
 import { Chip as ChipMUI } from '@mui/material';
 import classNames from 'classnames';
-import { ChangeEvent, EventHandler, KeyboardEvent, MouseEvent, ReactNode, ReactElement } from 'react';
+import React, { ChangeEvent, EventHandler, KeyboardEvent, MouseEvent, ReactNode, ReactElement } from 'react';
 import Avatar, { AvatarProps } from '../Avatar';
 import styles from './index.module.css';
 
@@ -20,7 +20,7 @@ export type ChipProps = {
 	icon?: ReactElement;
 }
 
-const Chip = ({
+const Chip: React.FC<ChipProps> = ({
 	className,
 	"data-testid": dataTestId,
 	label,

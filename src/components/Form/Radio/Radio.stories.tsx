@@ -2,33 +2,11 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { useState } from 'react';
 import Radio, { RadioProps } from '.';
 
-const meta = {
+const meta: Meta<RadioProps> = {
     title: "Components/Form/Radio",
     component: Radio,
     tags: ["autodocs"],
-} satisfies Meta<typeof Radio>;
-  
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-const StoryContainer = (props: RadioProps) => {
-    const [selectedValue, setSelectedValue] = useState('');
-    return (
-      <Radio
-        {...props}
-        value={selectedValue || props.value}
-        onChange={(e) => setSelectedValue(e.target.value)}
-      />
-    );
-};
-
-const radioOptions = [
-    {label: 'Male', value:"male"},
-    {label: 'Female', value:"female"}
-];
-
-const storiesArgTypes = {
-	argTypes: {
+    argTypes: {
         label: {
             name: "label",
             control: {
@@ -57,6 +35,25 @@ const storiesArgTypes = {
         },
     }
 };
+  
+export default meta;
+type Story = StoryObj<RadioProps>;
+
+const StoryContainer = (props: RadioProps) => {
+    const [selectedValue, setSelectedValue] = useState('');
+    return (
+      <Radio
+        {...props}
+        value={selectedValue || props.value}
+        onChange={(e) => setSelectedValue(e.target.value)}
+      />
+    );
+};
+
+const radioOptions = [
+    {label: 'Male', value:"male"},
+    {label: 'Female', value:"female"}
+];
 
 export const Default: Story = {
     render: StoryContainer,
@@ -68,8 +65,7 @@ export const Default: Story = {
         horizontal: false,
         value: 'male',
         options: radioOptions
-    },
-    ...storiesArgTypes
+    }
 };
 
 export const AlignHorizontalRadio: Story = {
@@ -81,8 +77,7 @@ export const AlignHorizontalRadio: Story = {
         horizontal: true,
         color: 'grey',
         options: radioOptions
-    },
-    ...storiesArgTypes
-}
+    }
+};
 
 

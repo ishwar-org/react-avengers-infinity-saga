@@ -1,6 +1,6 @@
 import { Button as ButtonMUI } from '@mui/material';
 import classNames from 'classnames';
-import { ReactNode, MouseEvent, ComponentProps } from 'react';
+import React, { ReactNode, MouseEvent, ComponentProps } from 'react';
 import styles from './index.module.css';
 
 type MuiProps = Partial<
@@ -21,7 +21,7 @@ export type ButtonProps = MuiProps &{
     children?: ReactNode;
 }
 
-const Button = ({
+const Button: React.FC<ButtonProps> = ({
     className,
     "data-testid": dataTestId,
     size="md",

@@ -5,7 +5,7 @@ import {
   Theme,
 } from '@mui/material';
 import classNames from 'classnames';
-import { useCallback, useMemo, ReactNode } from 'react';
+import React, { useCallback, useMemo, ReactNode } from 'react';
 import { ApproverBadge } from './ApproverBadge';
 import { AVATAR_COLCORS } from '../../utils';
 import styles from './index.module.css';
@@ -23,7 +23,7 @@ export type AvatarProps = {
   size?: "xxs" | "xs" | "sm" | "md" | "lg" | "xl" | "xxl";
 }
 
-const Avatar = ({
+const Avatar: React.FC<AvatarProps> = ({
 	className,
 	"data-testid": dataTestId,
 	alt,
@@ -34,7 +34,7 @@ const Avatar = ({
 	badgeContent = <ApproverBadge fill={"#177245"} />,
 	variant = "circular",
 	size = "md"
-}: AvatarProps) => {
+}) => {
 	const hashCode = (fullName: string) => {
     let hash = 0;
     if (fullName.length === 0) {
