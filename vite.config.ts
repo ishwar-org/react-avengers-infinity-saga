@@ -16,6 +16,18 @@ export default defineConfig({
           src: path.resolve(__dirname, "src/assets/*"),
           dest: "./assets",
         },
+        {
+          src: path.resolve(__dirname, "src/components/*"),
+          dest: "./components",
+        },
+        {
+          src: path.resolve(__dirname, "src/types/*"),
+          dest: "./types",
+        },
+        {
+          src: path.resolve(__dirname, "src/utils/*"),
+          dest: "./utils",
+        },
       ],
     }),
   ],
