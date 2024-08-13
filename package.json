@@ -3,12 +3,12 @@
   "private": false,
   "version": "0.0.1",
   "type": "module",
+  "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "main": "./dist/react-avengers-infinity-saga.umd.js",
+  "main": "./src/index.ts",
   "module": "./dist/react-avengers-infinity-saga.es.js",
-  "types": "./dist/index.d.ts",
   "export": {
     ".": {
       "import": "./dist/react-avengers-infinity-saga.es.js",
