@@ -2,20 +2,26 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "target": "ESNext",
+    "moduleResolution": "node",
     "module": "ESNext",
     "declaration": true,
     "declarationMap": true,
-    "emitDeclarationOnly": false,
-    "moduleResolution": "node",
+    "emitDeclarationOnly": true,
     "allowSyntheticDefaultImports": true,
     "outDir": "./dist",
     "rootDir": "./src",
-    "baseUrl": ".",
+    "baseUrl": "./src/",
     "strict": true,
     "skipLibCheck": true,
     "jsx": "react-jsx",
-    "forceConsistentCasingInFileNames": true
+    "allowImportingTsExtensions": true,
+    "forceConsistentCasingInFileNames": true,
+    "paths": {
+      "@react-avengers-infinity-saga/components": ["components"],
+      "@react-avengers-infinity-saga/types": ["types"],
+      "@react-avengers-infinity-saga/utils": ["utils"]
+    }
   },
-  "include": ["src/**/*"],
+  "include": ["./src"],
   "exclude": ["node_modules", "dist"]
 }

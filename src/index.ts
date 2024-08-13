@@ -1,6 +1,6 @@
 import "./styles/constants.module.css";
 import "./styles/fonts.module.css";
 
-export * from './components';
-export * from "./types";
-export * from './utils';
+export * from '@react-avengers-infinity-saga/components';
+export * from "@react-avengers-infinity-saga/types";
+export * from '@react-avengers-infinity-saga/utils';

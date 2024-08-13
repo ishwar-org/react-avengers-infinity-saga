@@ -52,6 +52,7 @@
   "devDependencies": {
     "@babel/core": "^7.25.2",
     "@chromatic-com/storybook": "^1.6.1",
+    "@rollup/plugin-alias": "^5.1.0",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/commit-analyzer": "^9.0.0",
     "@semantic-release/github": "^8.0.0",
@@ -82,7 +83,8 @@
     "typescript": "^5.5.4",
     "vite": "^5.3.5",
     "vite-plugin-dts": "^4.0.0-beta.2",
-    "vite-plugin-static-copy": "^1.0.6"
+    "vite-plugin-static-copy": "^1.0.6",
+    "vite-tsconfig-paths": "^5.0.1"
   },
   "peerDependencies": {
     "classnames": "^2.5.1",
