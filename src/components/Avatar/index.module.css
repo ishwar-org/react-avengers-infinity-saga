@@ -45,7 +45,7 @@
 	font-size: var(--fontSize28);
 }
 
-/*---------======= Avatar with Badges =========--------*/
+/* ---------======= Avatar with Badges =========-------- */
 :global(.MuiBadge-root).avatarBadge-xxs :global(.MuiBadge-badge) svg{
 	width: var(--width10);
 	height: var(--height10);

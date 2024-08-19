@@ -1,15 +1,14 @@
 :root{
-    /* -----======= Colors =======------*/
-    --white: #ffffff;
+    /* -----======= Colors =======------ */
+    --white: #fff;
     --primary: #6F00FF;
     --secondary: #a19f9a;
-    --danger: #ff0000;
+    --danger: #f00;
     --info: #4fa9fc;
     --warning: #FFA500;
     --greySecondary: #676a6c;
     --success: #00A550;
-    --error: #ff0000;
-
+    --error: #f00;
     --primaryHover: rgb(111 0 255 / 12%);
     --secondaryHover: rgb(161 159 154 / 12%);
     --dangerHover: rgb(255 0 0 / 12%);
@@ -17,22 +16,16 @@
     --warningHover: rgb(255 165 0 / 12%);
     --successHover: rgb(0 165 80 / 12%);
     --errorHover: rgb(255 0 0 / 12%);
-
     --backgroundTransparent: transparent;
     --offWhiteBg: rgba(0, 0, 0, 0.06);
-
     --primaryBorder: rgb(111 0 255 / 22%);
     --secondaryBorder: rgb(161 159 154 / 22%);
     --dangerBorder: rgb(255 0 0 / 22%);
-    --infoHover: rgb(79 169 252 / 22%);
     --warningBorder: rgb(255 165 0 / 22%);
-    --successHover: rgb(0 165 80 / 22%);
     --errorBorder: rgb(255 0 0 / 22%);
     --greySecondaryBorder: rgb(103 106 108 / 22%);
-
     --primaryHover60: rgb(111 0 255 / 60%);
     --successHover60: rgb(0 165 80 / 60%);
-
     --neutral50: #f9fafb;
     --neutral100: #f2f4f7;
     --neutral200: #d0d5dd;
@@ -40,23 +33,19 @@
     --neutral400: #667085;
     --neutral500: #344054;
     --neutral600: #101828;
-
-
     --error600: #cb1e1d;
-
-
     --green-bright: #00d407;
     --green-light: #63ca81;
-
-    /* -----======= Gradient Colors =======------*/
-    --primaryPurpleGradient: linear-gradient(90deg, hsla(295, 100%, 84%, 1) 0%, hsla(238, 100%, 71%, 1) 100%);
-    --primaryGreenGradient: linear-gradient(90deg, hsla(145, 83%, 74%, 1) 0%, hsla(204, 77%, 76%, 1) 100%);
-    --primaryBlueGradient: linear-gradient(90deg, hsla(239, 100%, 67%, 1) 0%, hsla(187, 100%, 89%, 1) 100%);
-    --primaryRedGradient: linear-gradient(90deg, hsla(333, 100%, 53%, 1) 0%, hsla(33, 94%, 57%, 1) 100%);
-    --primaryDarkGreenGradient: linear-gradient(90deg, hsla(148, 89%, 78%, 1) 0%, hsla(210, 81%, 22%, 1) 100%);
+    
+    /* -----======= Gradient Colors =======------ */
+    --primaryPurpleGradient: linear-gradient(90deg, hsla(295deg, 100%, 84%, 1) 0%, hsla(238deg, 100%, 71%, 1) 100%);
+    --primaryGreenGradient: linear-gradient(90deg, hsla(145deg, 83%, 74%, 1) 0%, hsla(204deg, 77%, 76%, 1) 100%);
+    --primaryBlueGradient: linear-gradient(90deg, hsla(239deg, 100%, 67%, 1) 0%, hsla(187deg, 100%, 89%, 1) 100%);
+    --primaryRedGradient: linear-gradient(90deg, hsla(333deg, 100%, 53%, 1) 0%, hsla(33deg, 94%, 57%, 1) 100%);
+    --primaryDarkGreenGradient: linear-gradient(90deg, hsla(148deg, 89%, 78%, 1) 0%, hsla(210deg, 81%, 22%, 1) 100%);
     --warningGradient: linear-gradient(90deg, hsl(38.82deg 100% 50% / 58.04%) 0%, hsl(38.94deg 97.61% 50.78% / 87.06%) 100%);
-
-    /* -------======== opacity =========--------*/
+    
+    /* -------======== opacity =========-------- */
     --opacity10: 0.1;
     --opacity20: 0.2;
     --opacity30: 0.3;
@@ -68,7 +57,7 @@
     --opacity90: 0.9;
     --opacity100: 1;
 
-    /* -------======== font size =========--------*/
+    /* -------======== font size =========-------- */
     --fontSize8: 8px;
     --fontSize10: 10px;
     --fontSize12: 12px;
@@ -82,7 +71,7 @@
     --fontSize28: 28px;
     --fontSize30: 30px;
 
-    /* -------======== font weight =========--------*/
+    /* -------======== font weight =========-------- */
     --fontWeight400: 400;
     --fontWeight500: 500;
     --fontWeight600: 600;
@@ -91,7 +80,7 @@
     --fontWeight900: 900;
     --fontWeightBold: bold;
 
-    /* -------======== Padding =========--------*/
+    /* -------======== Padding =========-------- */
     --padding0: 0;
     --padding2: 2px;
     --padding4: 4px;
@@ -125,7 +114,7 @@
     --padding58: 58px;
     --padding60: 60px;
 
-    /* -------======== margin =========--------*/
+    /* -------======== margin =========-------- */
     --margin0: 0;
     --margin2: 2px;
     --margin3: 3px;
@@ -159,7 +148,7 @@
     --margin58: 58px;
     --margin60: 60px;
 
-    /* -------======== border-radius =========--------*/
+    /* -------======== border-radius =========-------- */
     --borderRadius4: 4px;
     --borderRadius6: 6px;
     --borderRadius8: 8px;
@@ -176,11 +165,11 @@
     --borderRadius30: 30px;
     --borderRadius50: 50px;
 
-    /* -------======== border width =========--------*/
+    /* -------======== border width =========-------- */
     --borderWidth1: 1px;
     --borderWidth2: 2px;
 
-    /*-------========= width ==========---------*/
+    /* -------========= width ==========--------- */
     --width8: 8px;
     --width10: 10px;
     --width12: 12px;
@@ -225,7 +214,7 @@
     --width450: 450px;
     --fullWidth: 100%;
 
-    /*-------========= height ==========---------*/
+    /* -------========= height ==========--------- */
     --height8: 8px;
     --height10: 10px;
     --height12: 12px;
@@ -271,32 +260,32 @@
     --fullHeight: 100%;
     --fullHeightVh: 100vh;
 
-    /* -------======== border style =========--------*/
+    /* -------======== border style =========-------- */
     --borderStyleSolid: solid;
     --borderStyleDotted: dotted;
     --borderStyleDashed: dashed;
 
-    /* -------======== cursor =========--------*/
+    /* -------======== cursor =========-------- */
     --cursorPointer: pointer;
     --cursorNotAllowed: not-allowed;
     --cursorDefault: default;
 
-    /* -------======== line height =========--------*/
+    /* -------======== line height =========-------- */
     --lineHeight20: 20px;
     --lineHeight22: 22px;
 
-    /* -------======== transisition duration =========--------*/
+    /* -------======== transisition duration =========-------- */
     --durations3s: 0.3s;
     --durations5s: 0.5s;
 
-    /* -------======== transisition effect =========--------*/
+    /* -------======== transisition effect =========-------- */
     --effectEaseIn: ease-in;
     --effectEaseOut: ease-out;
     --effectEaseInOut: ease-in-out;
 
-    /*---------======= gap ========-------*/
+    /* ---------======= gap ========------- */
     --gap8: 8px;
-
-    /*-------======== box shadow =========---------*/
+    
+    /* -------======== box shadow =========--------- */
     --boxShadowSeondary: rgb(143 142 142 / 15%) 0px -1px 1px -1px, rgb(143 142 142 / 15%) 0px 1px 9px 0px, rgb(143 142 142 / 15%) 0px 1px 4px 0px;
 }

@@ -8,7 +8,7 @@ const ColorPlatte = ({ colors }: ColorProps) => {
     return (
         <div className={styles.colorContainer}>
             {colors.map((color: string) => (
-                <div className={styles.colorBox} style={{ backgroundColor: color }}>
+                <div key={`color-#{color}`} className={styles.colorBox} style={{ backgroundColor: color }}>
                     {color}
                 </div>
             ))}

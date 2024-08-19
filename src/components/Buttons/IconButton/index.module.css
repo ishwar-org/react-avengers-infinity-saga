@@ -2,7 +2,7 @@
     transition: all 0.3s ease-in-out;
 }
 
-/*------- ICON BUTTON VARIANT FILLED ----------*/
+/* ------- ICON BUTTON VARIANT FILLED ---------- */
 :global(.MuiIconButton-root).iconButtonMui.iconbutton-filled-primary{
     background: var(--primaryPurpleGradient);
     color: var(--white);
@@ -33,7 +33,7 @@
     color: var(--white);
 }
 
-/*-------======== ICON BUTTON VARIANT FILLED AND DISABLED ========----------*/
+/* -------======== ICON BUTTON VARIANT FILLED AND DISABLED ========---------- */
 :global(.MuiIconButton-root).iconButtonMui.iconbutton-outlined{
     background-color: var(--white);
     border-width: var(--borderWidth1);
@@ -109,7 +109,7 @@
 }
 
 
-/*------- ICON BUTTON SIZES - SM, MD and LG ----------*/
+/* ------- ICON BUTTON SIZES - SM, MD and LG ---------- */
 :global(.MuiIconButton-root).iconButtonMui.iconbutton-sm {
     padding: var(--padding8);
 }

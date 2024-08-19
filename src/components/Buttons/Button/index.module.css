@@ -5,7 +5,7 @@
     text-transform: initial;
 }
 
-/*-------========= BUTTON VARIANT - TEXT AND OUTLINED, DISBALED ======----------*/
+/* -------========= BUTTON VARIANT - TEXT AND OUTLINED, DISBALED ======---------- */
 :global(.MuiButton-root).buttonMui.button-text{
     transition: all var(--durations5s) var(--effectEaseInOut);
     background-color: var(--backgroundTransparent);
@@ -45,6 +45,73 @@
 }
 
 :global(.MuiButton-root).buttonMui.button-text-warning{
+    color: var(--warning);
+}
+
+/* ------- BUTTON VARIANT - CONTAINED ---------- */
+:global(.MuiButton-root).buttonMui.button-contained-primary {
+    background: var(--primaryPurpleGradient);
+    color: var(--white);
+}
+
+:global(.MuiButton-root).buttonMui.button-contained-secondary {
+    background: var(--white);
+    color: var(--primary);
+    box-shadow: var(--boxShadowSeondary);
+}
+
+:global(.MuiButton-root).buttonMui.button-contained-success {
+    background: var(--success);
+    color: var(--white);
+}
+
+:global(.MuiButton-root).buttonMui.button-contained-error {
+    background: var(--error);
+    color: var(--white);
+}
+
+:global(.MuiButton-root).buttonMui.button-contained-info {
+    background: var(--info);
+    color: var(--white);
+}
+
+:global(.MuiButton-root).buttonMui.button-contained-warning {
+    background: var(--warning);
+    color: var(--white);
+}
+
+:global(.MuiButton-root.Mui-disabled).button-contained-secondary{
+    box-shadow: none;
+}
+
+/* ------- BUTTON VARIANT - OUTLINED ---------- */
+:global(.MuiButton-root).buttonMui.button-outlined-primary {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+:global(.MuiButton-root).buttonMui.button-outlined-secondary {
+    border-color: var(--secondary);
+    color: var(--secondary);
+}
+
+:global(.MuiButton-root).buttonMui.button-outlined-success {
+    border-color: var(--success);
+    color: var(--success);
+}
+
+:global(.MuiButton-root).buttonMui.button-outlined-error {
+    border-color: var(--error);
+    color: var(--error);
+}
+
+:global(.MuiButton-root).buttonMui.button-outlined-info {
+    border-color: var(--info);
+    color: var(--info);
+}
+
+:global(.MuiButton-root).buttonMui.button-outlined-warning {
+    border-color: var(--warning);
     color: var(--warning);
 }
 
@@ -102,74 +169,7 @@
     background-color: var(--warningHover)
 }
 
-/*------- BUTTON VARIANT - CONTAINED ----------*/
-:global(.MuiButton-root).buttonMui.button-contained-primary {
-    background: var(--primaryPurpleGradient);
-    color: var(--white);
-}
-
-:global(.MuiButton-root).buttonMui.button-contained-secondary {
-    background: var(--white);
-    color: var(--primary);
-    box-shadow: var(--boxShadowSeondary);
-}
-
-:global(.MuiButton-root).buttonMui.button-contained-success {
-    background: var(--success);
-    color: var(--white);
-}
-
-:global(.MuiButton-root).buttonMui.button-contained-error {
-    background: var(--error);
-    color: var(--white);
-}
-
-:global(.MuiButton-root).buttonMui.button-contained-info {
-    background: var(--info);
-    color: var(--white);
-}
-
-:global(.MuiButton-root).buttonMui.button-contained-warning {
-    background: var(--warning);
-    color: var(--white);
-}
-
-:global(.MuiButton-root.Mui-disabled).button-contained-secondary{
-    box-shadow: none;
-}
-
-/*------- BUTTON VARIANT - OUTLINED ----------*/
-:global(.MuiButton-root).buttonMui.button-outlined-primary {
-    border-color: var(--primary);
-    color: var(--primary);
-}
-
-:global(.MuiButton-root).buttonMui.button-outlined-secondary {
-    border-color: var(--secondary);
-    color: var(--secondary);
-}
-
-:global(.MuiButton-root).buttonMui.button-outlined-success {
-    border-color: var(--success);
-    color: var(--success);
-}
-
-:global(.MuiButton-root).buttonMui.button-outlined-error {
-    border-color: var(--error);
-    color: var(--error);
-}
-
-:global(.MuiButton-root).buttonMui.button-outlined-info {
-    border-color: var(--info);
-    color: var(--info);
-}
-
-:global(.MuiButton-root).buttonMui.button-outlined-warning {
-    border-color: var(--warning);
-    color: var(--warning);
-}
-
-/*------- BUTTON SHAPES - NORMAL, ROUNDED and PILL ----------*/
+/* ------- BUTTON SHAPES - NORMAL, ROUNDED and PILL ---------- */
 :global(.MuiButton-root).buttonMui.button-normal {
     border-radius: var(--borderRadius4);
 }
@@ -182,7 +182,7 @@
     border-radius: var(--borderRadius28);
 }
 
-/*------- BUTTON SIZES - SM, MD and LG ----------*/
+/* ------- BUTTON SIZES - SM, MD and LG ---------- */
 :global(.MuiButton-root).buttonMui.button-sm {
     padding: var(--padding4) var(--padding10);
     font-size: var(--fontSize12);
@@ -196,7 +196,7 @@
     padding: var(--padding10) var(--padding18);
 }
 
-/*-------====== BUTTON START AND END ICON ========-------*/
+/* -------====== BUTTON START AND END ICON ========------- */
 :global(.MuiButton-root).buttonMui :global(.MuiButton-startIcon){
     margin-right: var(--margin6);
 }

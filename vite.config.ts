@@ -16,6 +16,10 @@ export default defineConfig({
           src: path.resolve(__dirname, "src/assets/*"),
           dest: "./assets",
         },
+        {
+          src: path.resolve(__dirname, 'src/styles/constants.module.css'),
+          dest: './styles',
+        },
       ],
     }),
   ],

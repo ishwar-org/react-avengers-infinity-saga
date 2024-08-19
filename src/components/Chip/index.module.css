@@ -1,4 +1,4 @@
-/*--------========= CHIP VARiANT FILLED ============---------*/
+/* --------========= CHIP VARiANT FILLED ============--------- */
 :global(.MuiChip-root).chipMui.chip-filled{
   color: var(--white);
 }
@@ -27,7 +27,7 @@
   background-color: var(--warning);
 }
 
-/*--------========= CHIP VARiANT OUTLINED ============---------*/
+/* --------========= CHIP VARiANT OUTLINED ============--------- */
 :global(.MuiChip-root).chipMui.chip-outlined{
 	border-width: var(--borderWidth1);
 	border-style: solid;
@@ -69,7 +69,7 @@
 	border-color: var(--warningBorder);
 }
 
-/*---------========= CHIP SIZE - SMALL, MEDIUM =========-----*/
+/* ---------========= CHIP SIZE - SMALL, MEDIUM =========----- */
 :global(.MuiChip-root).chipMui{
 	padding: var(--padding2);
 	font-size: var(--fontSize12);
@@ -92,7 +92,7 @@
   padding:var(--padding0) var(--padding6);
 }
 
-/*---------========== Icon size ===========------*/
+/* ---------========== Icon size ===========------ */
 :global(.MuiChip-root).chipMui.chip-small svg:first-child{
   width: var(--width16);
   height: var(--height16);
@@ -117,7 +117,7 @@
   border-radius: var(--borderRadius4);
 }
 
-/*---------========== Delect Icon color variant ===========------*/
+/* ---------========== Delect Icon color variant ===========------ */
 :global(.MuiChip-root).chipMui.chip-filled :global(.MuiChip-deleteIcon){
   color: var(--white);
 }   

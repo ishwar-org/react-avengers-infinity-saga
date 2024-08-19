@@ -35,7 +35,8 @@
     "build": "tsc && vite build && npm run clean:dist",
     "clean:dist": "find dist -name '*.stories.d.ts' -delete",
     "commit": "git-cz",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "lint": "eslint -c ./.eslintrc.cjs 'src/**/*.{ts, tsx}' --fix",
+    "lint:css": "stylelint '**/*.css'",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build ",
@@ -77,10 +78,13 @@
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.7",
     "eslint-plugin-storybook": "^0.8.0",
-    "semantic-release": "^24.0.0",
+    "lint-staged": "^15.2.9",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "semantic-release": "^24.0.0",
     "storybook": "^8.2.6",
+    "stylelint": "^16.8.2",
+    "stylelint-config-standard": "^36.0.1",
     "typescript": "^5.5.4",
     "vite": "^5.3.5",
     "vite-plugin-dts": "^4.0.0-beta.2"
@@ -94,6 +98,12 @@
     "commitizen": {
       "path": "cz-conventional-changelog"
     }
+  },
+  "lint-staged": {
+    "**/*": [
+      "bash -c tsc"
+    ],
+    "*.{css}": "stylelint"
   },
   "release": {
     "branches": [
