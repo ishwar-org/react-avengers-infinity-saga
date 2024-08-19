@@ -3,36 +3,21 @@ import path from "path";
 import { defineConfig } from "vite";
 import dts from "vite-plugin-dts";
 import { viteStaticCopy } from "vite-plugin-static-copy";
-import alias from '@rollup/plugin-alias';
-import tsconfigPaths from 'vite-tsconfig-paths'
 
 export default defineConfig({
   plugins: [
     react(),
-    tsconfigPaths(),
     dts({
       insertTypesEntry: true,
     }),
-    // viteStaticCopy({
-    //   targets: [
-    //     {
-    //       src: path.resolve(__dirname, "src/assets/*"),
-    //       dest: "./assets",
-    //     },
-    //     {
-    //       src: path.resolve(__dirname, "src/components/*"),
-    //       dest: "./components",
-    //     },
-    //     {
-    //       src: path.resolve(__dirname, "src/types/*"),
-    //       dest: "./types",
-    //     },
-    //     {
-    //       src: path.resolve(__dirname, "src/utils/*"),
-    //       dest: "./utils",
-    //     },
-    //   ],
-    // }),
+    viteStaticCopy({
+      targets: [
+        {
+          src: path.resolve(__dirname, "src/assets/*"),
+          dest: "./assets",
+        },
+      ],
+    }),
   ],
   build: {
     sourcemap: true,
@@ -54,15 +39,6 @@ export default defineConfig({
           classnames: "classNames",
         },
       },
-      plugins: [
-        alias({
-          entries: [
-            { find: '@react-avengers-infinity-saga/components', replacement: path.resolve(__dirname, 'src/components') },
-            { find: '@react-avengers-infinity-saga/types', replacement: path.resolve(__dirname, 'src/types') },
-            { find: '@react-avengers-infinity-saga/utils', replacement: path.resolve(__dirname, 'src/utils') },
-          ],
-        }),
-      ],
     },
   },
   css: {

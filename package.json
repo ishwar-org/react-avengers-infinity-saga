@@ -32,8 +32,8 @@
   "homepage": "https://github.com/ishwar-17/react-avengers-infinity-saga#readme",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -p tsconfig.app.json && vite build",
-    "build:types": "tsc --project tsconfig.app.json && vite build",
+    "build": "tsc && vite build && npm run clean:dist",
+    "clean:dist": "find dist -name '*.stories.d.ts' -delete",
     "commit": "git-cz",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
@@ -47,12 +47,12 @@
     "@mui/icons-material": "^5.16.5",
     "@mui/material": "^5.16.5",
     "react-feather": "^2.0.10",
-    "semantic-release": "^24.0.0"
+    "semantic-release": "^24.0.0",
+    "vite-plugin-static-copy": "^1.0.6"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
     "@chromatic-com/storybook": "^1.6.1",
-    "@rollup/plugin-alias": "^5.1.0",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/commit-analyzer": "^9.0.0",
     "@semantic-release/github": "^8.0.0",
@@ -66,7 +66,6 @@
     "@storybook/react": "^8.2.6",
     "@storybook/react-vite": "^8.2.6",
     "@storybook/test": "^8.2.6",
-    "@types/glob": "^8.1.0",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@typescript-eslint/eslint-plugin": "^7.15.0",
@@ -79,21 +78,17 @@
     "eslint-plugin-react-refresh": "^0.4.7",
     "eslint-plugin-storybook": "^0.8.0",
     "semantic-release": "^24.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "storybook": "^8.2.6",
     "typescript": "^5.5.4",
     "vite": "^5.3.5",
-    "vite-plugin-dts": "^4.0.0-beta.2",
-    "vite-plugin-static-copy": "^1.0.6",
-    "vite-tsconfig-paths": "^5.0.1"
+    "vite-plugin-dts": "^4.0.0-beta.2"
   },
   "peerDependencies": {
     "classnames": "^2.5.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
-  },
-  "overrides": {
-    "minimatch": "5.1.2",
-    "glob": "8.1.0"
   },
   "config": {
     "commitizen": {
