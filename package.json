@@ -3,18 +3,18 @@
   "private": false,
   "version": "0.0.1",
   "type": "module",
-  "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "main": "./src/index.ts",
+  "main": "./dist/react-avengers-infinity-saga.umd.js",
   "module": "./dist/react-avengers-infinity-saga.es.js",
+  "types": "./dist/index.d.ts",
   "export": {
     ".": {
       "import": "./dist/react-avengers-infinity-saga.es.js",
       "require": "./dist/react-avengers-infinity-saga.umd.js"
     },
-    "./style": "./dist/style.css"
+    "./style": "./dist/index.css"
   },
   "repository": {
     "type": "git",

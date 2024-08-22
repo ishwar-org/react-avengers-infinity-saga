@@ -15,16 +15,13 @@ export default defineConfig({
         {
           src: path.resolve(__dirname, "src/assets/*"),
           dest: "./assets",
-        },
-        {
-          src: path.resolve(__dirname, 'src/styles/constants.module.css'),
-          dest: './styles',
-        },
+        }
       ],
     }),
   ],
   build: {
     sourcemap: true,
+    cssCodeSplit: true,
     lib: {
       entry: path.resolve(__dirname, "src/index.ts"),
       name: "react-avengers-infinity-saga",
@@ -49,6 +46,7 @@ export default defineConfig({
     modules: {
       generateScopedName: (name, file) => {
         const componentName = path.basename(path.dirname(file));
+        console.log("file", file);
         return `react-avengers-infinity-saga-${componentName.toLowerCase()}--${name}`;
       },
     },

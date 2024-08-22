@@ -1,5 +1,5 @@
-import "./styles/constants.module.css";
-import "./styles/fonts.module.css";
+import "./styles/constants.css";
+import "./styles/fonts.css";
 
 export * from './components';
 export * from "./types";
