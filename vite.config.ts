@@ -21,7 +21,6 @@ export default defineConfig({
   ],
   build: {
     sourcemap: true,
-    cssCodeSplit: true,
     lib: {
       entry: path.resolve(__dirname, "src/index.ts"),
       name: "react-avengers-infinity-saga",

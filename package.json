@@ -14,7 +14,7 @@
       "import": "./dist/react-avengers-infinity-saga.es.js",
       "require": "./dist/react-avengers-infinity-saga.umd.js"
     },
-    "./style": "./dist/index.css"
+    "./style": "./dist/style.css"
   },
   "repository": {
     "type": "git",
