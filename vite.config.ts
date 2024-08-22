@@ -46,7 +46,6 @@ export default defineConfig({
     modules: {
       generateScopedName: (name, file) => {
         const componentName = path.basename(path.dirname(file));
-        console.log("file", file);
         return `react-avengers-infinity-saga-${componentName.toLowerCase()}--${name}`;
       },
     },

@@ -1,6 +1,6 @@
 // Export component and types of Forms.
 export { default as PasswordField } from './Password';
-export type { PasswordFieldProps } from './Password';
+export type { PasswordFieldProps, PASSWORD_REQUIREMENT_KEYS } from './Password';
 export { default as Switch } from './Switch';
 export type { SwitchProps } from './Switch';
 export { default as TextField } from './TextField';
