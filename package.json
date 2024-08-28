@@ -6,15 +6,15 @@
   "files": [
     "dist"
   ],
-  "main": "dist/react-avengers-infinity-saga.umd.js",
-  "module": "dist/react-avengers-infinity-saga.es.js",
-  "types": "dist/index.d.ts",
+  "main": "./dist/react-avengers-infinity-saga.umd.js",
+  "module": "./dist/react-avengers-infinity-saga.es.js",
+  "types": "./dist/index.d.ts",
   "export": {
     ".": {
-      "import": "dist/react-avengers-infinity-saga.es.js",
-      "require": "dist/react-avengers-infinity-saga.umd.js"
+      "import": "./dist/react-avengers-infinity-saga.es.js",
+      "require": "./dist/react-avengers-infinity-saga.umd.js"
     },
-    "./style": "dist/style.css"
+    "./style": "./dist/style.css"
   },
   "repository": {
     "type": "git",
