@@ -37,6 +37,7 @@
 .textarea-autosize-outlined{
     background-color: var(--white);
     border: 1px solid var(--greySecondaryBorder);
+    color: var(--greySecondary);
 }
 
 .textarea-autosize-filled:hover, .textarea-autosize-filled:focus{

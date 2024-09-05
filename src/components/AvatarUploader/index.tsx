@@ -7,7 +7,7 @@ export interface AvatarUploaderProps {
     onChange: (selectedFile: File) => void;
     accept?: string;
     emptyLabel: ReactNode;
-    changelabel: ReactNode;
+    changeLabel: ReactNode;
     loadingLabel?: ReactNode;
     isLoading?: boolean;
     onError?: () => void;
@@ -22,7 +22,7 @@ const AvatarUploader = ({
     onChange,
     accept = '',
     emptyLabel = 'You can upload your logo',
-    changelabel = 'Upload logo',
+    changeLabel = 'Upload logo',
     loadingLabel = '',
     isLoading = false,
     onError,
@@ -37,7 +37,7 @@ const AvatarUploader = ({
             onChange={onChange}
             accept={accept}
             emptyLabel={emptyLabel}
-            changeLabel={changelabel}
+            changeLabel={changeLabel}
             loadingLabel={loadingLabel}
             isLoading={isLoading}
             onError={onError}
