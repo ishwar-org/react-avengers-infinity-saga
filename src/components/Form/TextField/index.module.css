@@ -1,12 +1,17 @@
 .common-textfield :global(.MuiInputLabel-root){
     font-size: var(--fontSize14);
-    line-height: var(--lineHeight20);
+    line-height: var(--lineHeight30);
     color: var(--greySecondary);
     letter-spacing: 0.5px;
 }
 
+.common-textfield :global(.MuiInputLabel-root.Mui-focused) {
+    line-height: var(--lineHeight30)
+}
+
 .common-textfield :global(.MuiInputBase-root) :global(.MuiInputBase-input){
     font-size: var(--fontSize14);
+    height: var(--height30);
 }
 
 .common-textfield :global(.MuiInputBase-root),

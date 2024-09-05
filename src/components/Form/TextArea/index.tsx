@@ -23,20 +23,20 @@ export interface TextAreaProps extends FieldBaseProps {
     label?: string | ReactNode;
     name: string;
     placeholder: string;
-    value: string | number;
-    defaultValue: string;
+    value?: string | number;
+    defaultValue?: string;
     minRows?: number;
     maxRows?: number;
     onChange?: ChangeEventHandler<HTMLTextAreaElement | HTMLInputElement>;
     onBlur?: FocusEventHandler<HTMLTextAreaElement | HTMLInputElement>;
-    variant?: "outlined" | "filled";
-    shape?: "normal" | "rounded";
+    variant?: 'outlined' | 'filled';
+    shape?: 'normal' | 'rounded';
     required?: boolean;
     disabled?: boolean;
     hideErrorIcon?: boolean;
     minLength?: number;
-    "aria-label"?: string;
-    "data-testid"?: string;
+    'aria-label'?: string;
+    'data-testid'?: string;
 }
 
 const TextArea = (

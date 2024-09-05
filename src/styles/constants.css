@@ -95,6 +95,7 @@
     --padding20: 20px;
     --padding22: 22px;
     --padding24: 24px;
+    --padding25: 25px;
     --padding26: 26px;
     --padding28: 28px;
     --padding30: 30px;
@@ -273,6 +274,7 @@
     /* -------======== line height =========-------- */
     --lineHeight20: 20px;
     --lineHeight22: 22px;
+    --lineHeight30: 30px;
 
     /* -------======== transisition duration =========-------- */
     --durations3s: 0.3s;

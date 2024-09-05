@@ -196,6 +196,10 @@
     padding: var(--padding10) var(--padding18);
 }
 
+:global(.MuiButton-root).buttonMui.button-xl {
+    padding: var(--padding16) var(--padding26);
+}
+
 /* -------====== BUTTON START AND END ICON ========------- */
 :global(.MuiButton-root).buttonMui :global(.MuiButton-startIcon){
     margin-right: var(--margin6);

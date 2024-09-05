@@ -7,19 +7,19 @@ type MuiProps = Partial<
     Omit<ComponentProps<typeof ButtonMUI>,  "size" | "color" | "variant">
 >;
 
-export type ButtonProps = MuiProps &{
+export type ButtonProps = MuiProps & {
     className?: string;
-    "data-testid"?: string;
-    size?: "sm" | "md" | "lg";
-    color?: "primary" | "secondary" | "success" | "error" | "info" | "warning";
-    variant?: "text" | "contained" | "outlined";
-    shape?: "normal" | "rounded" | "pill";
+    'data-testid'?: string;
+    size?: 'sm' | 'md' | 'lg' | 'xl';
+    color?: 'primary' | 'secondary' | 'success' | 'error' | 'info' | 'warning';
+    variant?: 'text' | 'contained' | 'outlined';
+    shape?: 'normal' | 'rounded' | 'pill';
     startIcon?: ReactNode;
     endIcon?: ReactNode;
-    onClick?: (event: MouseEvent<HTMLButtonElement, MouseEvent>) => void; 
+    onClick?: (event: MouseEvent<HTMLButtonElement, MouseEvent>) => void;
     disabled?: boolean;
     children?: ReactNode;
-}
+};
 
 const Button: React.FC<ButtonProps> = ({
     className,
