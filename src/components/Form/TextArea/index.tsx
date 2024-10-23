@@ -1,12 +1,16 @@
-import { InputAdornment, TextareaAutosize as BaseTextareaAutosize } from "@mui/material";
-import classNames from "classnames";
+import {
+    InputAdornment,
+    TextareaAutosize as BaseTextareaAutosize,
+    FormLabel,
+} from '@mui/material';
+import classNames from 'classnames';
 import React, {
     ChangeEventHandler,
     FocusEventHandler,
     ReactNode,
-    forwardRef
+    forwardRef,
 } from 'react';
-import { AlertCircle, Check } from "../../Icons";
+import { AlertCircle, Check } from '../../Icons';
 import styles from './index.module.css';
 
 interface FieldBaseProps {
@@ -42,30 +46,35 @@ export interface TextAreaProps extends FieldBaseProps {
 const TextArea = (
     {
         className,
-        label = "",
+        label = '',
         name,
         placeholder,
         value,
         defaultValue,
         onChange,
         onBlur,
-        variant = "filled",
-        shape = "normal",
+        variant = 'filled',
+        shape = 'normal',
         required = false,
         error,
         success = false,
         disabled = false,
         helperText,
         hideErrorIcon = false,
-        "aria-label": ariaLabel,
-        "data-testid": dataTestId
+        'aria-label': ariaLabel,
+        'data-testid': dataTestId,
     }: TextAreaProps,
-    ref: FieldRef
+    ref: FieldRef,
 ) => {
     return (
         <div className={styles[`main-textarea-container`]}>
             {label && (
-                <label className={classNames(styles['textarea-label'], error && styles.textareaLabelError)} data-testid={`${dataTestId}-label`}>{label}</label>
+                <FormLabel
+                    className={classNames(error && styles.textareaLabelError)}
+                    data-testid={`${dataTestId}-label`}
+                >
+                    {label}
+                </FormLabel>
             )}
             <BaseTextareaAutosize
                 className={classNames(
@@ -73,7 +82,7 @@ const TextArea = (
                     styles.textareaAutoSize,
                     styles[`textarea-autosize-${variant}`],
                     styles[`textarea-autosize-${shape}`],
-                    error && styles[`textarea-autosize-error`]
+                    error && styles[`textarea-autosize-error`],
                 )}
                 name={name}
                 placeholder={placeholder}
@@ -87,18 +96,37 @@ const TextArea = (
                 onChange={onChange}
                 onBlur={onBlur}
             />
-            { error && !hideErrorIcon && (
-                <InputAdornment position="end" className={classNames(styles.textareaAutoSizeIcon, styles[`textarea-error-icon`])}>
+            {error && !hideErrorIcon && (
+                <InputAdornment
+                    position='end'
+                    className={classNames(
+                        styles.textareaAutoSizeIcon,
+                        styles[`textarea-error-icon`],
+                    )}
+                >
                     <AlertCircle className={styles.errorIcon} />
                 </InputAdornment>
             )}
-            { success && (
-                <InputAdornment position="end" className={classNames(styles.textareaAutoSizeIcon, styles[`textarea-success-icon`])}>
+            {success && (
+                <InputAdornment
+                    position='end'
+                    className={classNames(
+                        styles.textareaAutoSizeIcon,
+                        styles[`textarea-success-icon`],
+                    )}
+                >
                     <Check className={styles.successIcon} />
                 </InputAdornment>
             )}
             {helperText && (
-                <span>{helperText}</span>
+                <span
+                    className={classNames(
+                        styles[`helper-text`],
+                        error && styles[`helper-text-error`],
+                    )}
+                >
+                    {helperText}
+                </span>
             )}
         </div>
     );

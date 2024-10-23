@@ -1,15 +1,17 @@
 import { Switch as SwitchMUI, FormControlLabel } from '@mui/material';
 import classNames from 'classnames';
-import React, { ChangeEvent, ReactNode, ComponentProps } from 'react';
+import { ChangeEvent, FC, ReactNode, ComponentProps } from 'react';
 import styles from './index.module.css';
 
-type SwitchMuiProps = Partial<Omit<ComponentProps<typeof SwitchMUI>, "color" | "size">>;
+type SwitchMuiProps = Partial<
+    Omit<ComponentProps<typeof SwitchMUI>, 'color' | 'size'>
+>;
 
 type SwitchInputProps = {
     'aria-label'?: string;
-}
+};
 
-export interface SwitchProps extends SwitchMuiProps{
+export interface SwitchProps extends SwitchMuiProps {
     className?: string;
     id: string;
     name: string;
@@ -20,13 +22,13 @@ export interface SwitchProps extends SwitchMuiProps{
     required?: boolean;
     disabled?: boolean;
     label?: ReactNode;
-    icon?: ReactNode;
-    checkedIcon?: ReactNode;
+    icon?: ReactNode | null;
+    checkedIcon?: ReactNode | null;
     inputProps?: SwitchInputProps;
-    "data-testid"?: string;
+    'data-testid'?: string;
 }
 
-const Switch: React.FC<SwitchProps> = ({
+const Switch: FC<SwitchProps> = ({
     className,
     id,
     name,
@@ -38,17 +40,26 @@ const Switch: React.FC<SwitchProps> = ({
     disabled = false,
     label = '',
     inputProps,
-    "data-testid": dataTestId
+    icon,
+    checkedIcon,
+    'data-testid': dataTestId,
 }) => {
     const commonSwitchProps = {
         id,
         name,
         checked,
         disableRipple,
+        ...(icon &&
+            checkedIcon && {
+                icon,
+                checkedIcon,
+            }),
         onChange,
         inputProps,
-        "data-testid": dataTestId
+        'data-testid': dataTestId,
     };
+
+    console.log(!!(icon && checkedIcon));
 
     if (label) {
         return (
@@ -58,8 +69,9 @@ const Switch: React.FC<SwitchProps> = ({
                         {...commonSwitchProps}
                         className={classNames(
                             styles.switchContainer,
+                            !!(icon && checkedIcon) && styles[`switch-icon`],
                             styles[`switch-bg-${color}`],
-                            className
+                            className,
                         )}
                     />
                 }
@@ -78,7 +90,8 @@ const Switch: React.FC<SwitchProps> = ({
             className={classNames(
                 styles.switchContainer,
                 styles[`switch-bg-${color}`],
-                className
+                !!(icon && checkedIcon) && styles[`switch-icon`],
+                className,
             )}
             required={required}
             disabled={disabled}

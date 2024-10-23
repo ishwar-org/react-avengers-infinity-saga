@@ -5,10 +5,11 @@
     width: 100%;
 }
 
-.textarea-label{
+.main-textarea-container :global(.MuiFormLabel-root){
     font-size: var(--fontSize14);
     margin-bottom: var(--margin6);
     color: var(--greySecondary);
+    font-weight: var(--fontWeight600);
 }
 
 .textareaLabelError{
@@ -19,6 +20,7 @@
     padding: var(--padding18) var(--padding58) var(--padding14) var(--padding18);
     transition: all 0.5s ease-in-out;
     min-height: 30px;
+    resize: none;
 }
 
 .textareaAutoSize:focus-visible{
@@ -49,11 +51,11 @@
 }
 
 .textarea-autosize-normal{
-    border-radius: var(--borderRadius6);
+    border-radius: var(--borderRadius8);
 }
 
 .textarea-autosize-rounded{
-    border-radius: var(--borderRadius12);
+    border-radius: var(--borderRadius25);
 }
 
 .textareaAutoSizeIcon{
@@ -61,12 +63,9 @@
     right: 2%;
 }
 
+.textarea-success-icon,
 .textarea-error-icon{
-    top: 62%;
-}
-
-.textarea-success-icon{
-    top: 64%;
+    top: 50%;
 }
 
 .errorIcon{
@@ -75,4 +74,15 @@
 
 .successIcon{
     color: var(--success);
+}
+
+.helper-text{
+    margin-top: 10px;
+    padding-left: 18px;
+    font-size: 14px;
+    color: var(--neutral400);
+}
+
+.helper-text-error{
+    color: var(--danger);
 }

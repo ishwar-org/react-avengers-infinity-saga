@@ -2,85 +2,131 @@ import type { Meta, StoryObj } from '@storybook/react';
 import TextField, { TextFieldProps } from '.';
 
 const meta: Meta<TextFieldProps> = {
-  title: "Components/Form/TextField",
-  component: TextField,
-  tags: ["autodocs"],
-  argTypes: {
-    variant: {
-      name: "variant",
-      control: {
-        type: "radio",
-        labels: {
-          outlined: "outlined",
-          filled: "filled"
+    title: 'Components/Form/TextField',
+    component: TextField,
+    tags: ['autodocs'],
+    argTypes: {
+        variant: {
+            name: 'variant',
+            control: {
+                type: 'radio',
+                labels: {
+                    outlined: 'outlined',
+                    filled: 'filled',
+                },
+            },
+            options: ['outlined', 'filled'],
         },
-      },
-      options: ["outlined", "filled"],
-    },
-    shape: {
-      name: "shape",
-      control: {
-        type: "radio",
-        labels: {
-          normal: "normal",
-          rounded: "rounded",
-          pill: "pill"
+        size: {
+            name: 'size',
+            control: {
+                type: 'radio',
+                labels: {
+                    sm: 'Small',
+                    md: 'Medium',
+                },
+            },
+            options: ['sm', 'md'],
         },
-      },
-      options: ["normal", "rounded", "pill"],
+        shape: {
+            name: 'shape',
+            control: {
+                type: 'radio',
+                labels: {
+                    normal: 'Normal',
+                    rounded: 'Rounded',
+                },
+            },
+            options: ['normal', 'rounded'],
+        },
     },
-  }
 };
 
 export default meta;
 type Story = StoryObj<TextFieldProps>;
 
 const StoryContainer = (props: TextFieldProps) => {
-  return (
-    <TextField
-      {...props}
-    />
-  );
+    return <TextField {...props} />;
 };
 
-export const Default: Story = {
-  render: StoryContainer,
-  args: {
-    id: "default",
-    label: "Username",
-    type: 'text',
-    name: "username",
-    variant:"outlined",
-    placeholder: "Enter the username",
-    shape: 'normal',
-  }
-}
+export const Outlined: Story = {
+    render: StoryContainer,
+    args: {
+        id: 'default-outlined',
+        fullWidth: true,
+        labelAsPlacelhoder: 'Username',
+        type: 'text',
+        name: 'username',
+        variant: 'outlined',
+        size: 'md',
+        placeholder: 'Enter the username',
+    },
+};
+
+export const Filled: Story = {
+    render: StoryContainer,
+    args: {
+        id: 'default-filled',
+        fullWidth: true,
+        labelAsPlacelhoder: 'Username',
+        type: 'text',
+        name: 'username',
+        variant: 'filled',
+        size: 'md',
+        placeholder: 'Enter the username',
+    },
+};
 
 export const Error: Story = {
-  render: StoryContainer,
-  args: {
-    id: "default",
-    label: "Username",
-    type: 'text',
-    name: "username",
-    variant:"outlined",
-    shape: 'normal',
-    placeholder: "Enter the username",
-    error: true,
-    helperText: "Error"
-  }
-}
+    render: StoryContainer,
+    args: {
+        id: 'default-error',
+        labelAsPlacelhoder: 'Username',
+        type: 'text',
+        name: 'username address',
+        variant: 'outlined',
+        placeholder: 'Enter the username',
+        error: true,
+        helperText: 'Error',
+    },
+};
 
 export const Success: Story = {
-  render: StoryContainer,
-  args: {
-    id: "default",
-    label: "Username",
-    type: 'text',
-    name: "username",
-    variant:"outlined",
-    shape: 'rounded',
-    placeholder: "Enter the username",
-    success: true,
-  }
-}
+    render: StoryContainer,
+    args: {
+        id: 'default-success',
+        labelAsPlacelhoder: 'Username',
+        type: 'text',
+        name: 'username',
+        variant: 'outlined',
+        placeholder: 'Enter the username',
+        success: true,
+    },
+};
+
+export const Label: Story = {
+    render: StoryContainer,
+    args: {
+        id: 'default-success',
+        label: 'Username',
+        type: 'text',
+        name: 'username',
+        variant: 'outlined',
+        placeholder: 'Enter the username',
+        fullWidth: true,
+    },
+};
+
+export const MultiLine: Story = {
+    render: StoryContainer,
+    args: {
+        id: 'default-success',
+        label: 'Username',
+        type: 'text',
+        name: 'username',
+        variant: 'outlined',
+        placeholder: 'Enter the username',
+        fullWidth: true,
+        multiline: true,
+    },
+};

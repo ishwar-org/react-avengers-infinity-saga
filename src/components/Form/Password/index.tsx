@@ -177,16 +177,21 @@ const PasswordField = ({
                 onKeyDown={onKeyDown}
             />
             {showPasswordRequirements && (
-                <Grid container className={styles.passwordField__requirementsWrapper}>
-                    {Object.entries(passwordRequirements)?.map(([key, props], index) => (
-                        <PasswordRequirement
-                            key={key}
-                            label={props.label}
-                            completed={props.validator(password)}
-                            error={error}
-                            index={index}
-                        />
-                    ))}
+                <Grid
+                    container
+                    className={styles.passwordField__requirementsWrapper}
+                >
+                    {Object.entries(passwordRequirements)?.map(
+                        ([key, props], index) => (
+                            <PasswordRequirement
+                                key={key}
+                                label={props.label}
+                                completed={props.validator(password)}
+                                error={error}
+                                index={index}
+                            />
+                        ),
+                    )}
                 </Grid>
             )}
         </>

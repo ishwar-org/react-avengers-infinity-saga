@@ -15,6 +15,18 @@
     background: var(--secondary);
 }
 
+.switch-icon :global(.MuiSwitch-switchBase){
+    padding: 7px 8px;
+}
+
+.switch-icon :global(.MuiSwitch-switchBase.Mui-checked){
+    padding: 7px 6px;
+}
+
+.switch-icon :global(.MuiSwitch-switchBase){
+    color: var(--neutral400);
+}
+
 .switch-bg-primary :global(.MuiSwitch-switchBase.Mui-checked),
 .switch-bg-primary :global(.MuiSwitch-switchBase.Mui-checked.Mui-disabled){
     color: var(--primary);

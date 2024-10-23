@@ -65,7 +65,6 @@ export const Default: Story = {
     render: StoryContainer,
     args: {
         variant: 'filled',
-        shape: 'rounded',
         label: 'Subject',
         name: 'subject',
         error: false,
@@ -78,12 +77,12 @@ export const Error: Story = {
     render: StoryContainer,
     args: {
         variant: 'outlined',
-        shape: 'rounded',
         label: 'Subject',
         error: true,
         success: false,
         name: 'subject',
         placeholder: 'Error',
+        helperText: 'Error',
     },
 };
 
@@ -91,11 +90,11 @@ export const Success: Story = {
     render: StoryContainer,
     args: {
         variant: 'outlined',
-        shape: 'rounded',
         label: 'Subject',
         error: false,
         success: true,
         name: 'subject',
-        placeholder: 'Error',
+        placeholder: 'Success',
+        helperText: 'This is success text',
     },
 };
