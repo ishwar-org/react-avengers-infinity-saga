@@ -121,19 +121,20 @@ const PasswordField = ({
     onChange,
     onKeyDown,
     error,
+    helperText,
     ...props
 }: PasswordFieldProps) => {
-    const [password, setPassword] = useState<string>(passwordValue ?? '');
+    const [password, setPassword] = useState<string>(passwordValue ?? "");
     const [showPassword, setShowPassword] = useState(false);
     const passwordIconClass = classNames(!disabled && styles.showPasswordIcon);
     const EyeIcon = showPassword ? EyeOff : Eye;
-    const fieldType = showPassword ? 'text' : 'password';
+    const fieldType = showPassword ? "text" : "password";
 
     const onPasswordChange = (event: ChangeEvent<HTMLInputElement>) => {
-        const password =  event.target.value;
+        const password = event.target.value;
         setPassword(password);
         onChange?.(event);
-    }
+    };
 
     const toggleShowPassword = () => {
         if (!disabled) {
@@ -147,25 +148,27 @@ const PasswordField = ({
                 onClick={toggleShowPassword}
                 className={passwordIconClass}
             />
-        )
+        ),
     };
 
     const passwordRequirements = useMemo(() => {
-        if(showPasswordRequirements){
+        if (showPasswordRequirements) {
             return Object.entries(
-                PASSWORD_REQUIREMENTS(passwordLength)
-            ).reduce<RequirementsConfig>((result , [key, { validator }]) => {
+                PASSWORD_REQUIREMENTS(passwordLength),
+            ).reduce<RequirementsConfig>((result, [key, { validator }]) => {
                 result[key as PASSWORD_REQUIREMENT_KEYS] = {
-                    label: 
-                        passwordRequirementLabels?.[key as PASSWORD_REQUIREMENT_KEYS] || "",
+                    label:
+                        passwordRequirementLabels?.[
+                            key as PASSWORD_REQUIREMENT_KEYS
+                        ] || "",
                     validator,
                 };
                 return result;
             }, {} as RequirementsConfig);
         }
         return {} as RequirementsConfig;
-    }, [showPasswordRequirements, passwordRequirementLabels, passwordLength])
-    
+    }, [showPasswordRequirements, passwordRequirementLabels, passwordLength]);
+
     return (
         <>
             <TextField
@@ -175,6 +178,8 @@ const PasswordField = ({
                 onChange={onPasswordChange}
                 endAdornment={adornments.end}
                 onKeyDown={onKeyDown}
+                error={error}
+                helperText={helperText}
             />
             {showPasswordRequirements && (
                 <Grid

@@ -185,19 +185,22 @@
 /* ------- BUTTON SIZES - SM, MD and LG ---------- */
 :global(.MuiButton-root).buttonMui.button-sm {
     padding: var(--padding4) var(--padding10);
-    font-size: var(--fontSize12);
+    font-size: var(--fontSize14);
 }
 
 :global(.MuiButton-root).buttonMui.button-md {
     padding: var(--padding8) var(--padding14);
+    font-size: var(--fontSize16);
 }
 
 :global(.MuiButton-root).buttonMui.button-lg {
     padding: var(--padding10) var(--padding18);
+    font-size: var(--fontSize18);
 }
 
 :global(.MuiButton-root).buttonMui.button-xl {
     padding: var(--padding16) var(--padding26);
+    font-size: var(--fontSize20);
 }
 
 /* -------====== BUTTON START AND END ICON ========------- */
