@@ -59,8 +59,6 @@ const Switch: FC<SwitchProps> = ({
         'data-testid': dataTestId,
     };
 
-    console.log(!!(icon && checkedIcon));
-
     if (label) {
         return (
             <FormControlLabel

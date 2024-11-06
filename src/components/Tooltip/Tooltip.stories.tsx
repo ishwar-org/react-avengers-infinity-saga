@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import Tooltip, { TooltipProps } from '.';
 import Button from '../Buttons/Button';
 import IconButton from '../Buttons/IconButton';
-import { Check, Info } from '../Icons';
+import { FiCheck, FiInfo } from '../Icons';
 import styles from './index.module.css';
 
 const meta: Meta<TooltipProps> = {
@@ -57,7 +57,7 @@ export const Default: Story = {
     render: StoryContainer,
     args: {
         title: "Verified the account",
-        children: <IconButton variant="filled" color="success" children={<Check />} />,
+        children: <IconButton variant="filled" color="success" children={<FiCheck />} />,
         placement: 'bottom',
         open:true
     },
@@ -67,7 +67,7 @@ export const WithArrow: Story = {
     render: StoryContainer,
     args: {
         title: "You are eligible take a test drive.",
-        children: <IconButton variant="filled" color="primary" children={<Info />} />,
+        children: <IconButton variant="filled" color="primary" children={<FiInfo />} />,
         placement: 'bottom',
         arrow: true
     },
@@ -77,7 +77,7 @@ export const WithFollowCursor: Story = {
     render: StoryContainer,
     args: {
         title: "You are eligible take a test drive.",
-        children: <IconButton variant="filled" color="primary" children={<Info />} />,
+        children: <IconButton variant="filled" color="primary" children={<FiInfo />} />,
         placement: 'bottom',
         followCursor: true
     },

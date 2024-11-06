@@ -1,25 +1,25 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
 import {
-  CreditCard,
-  Percent,
-  PieChart,
-  TrendingUp,
-  ArrowRight
+  FiCreditCard,
+  FiPercent,
+  FiPieChart,
+  FiTrendingUp,
+  FiArrowRight
 } from "./";
 
 const Icons = () => {
   return (
     <>
-      <CreditCard />
-      <PieChart />
-      <TrendingUp />
-      <ArrowRight />
-      <Percent />
+      <FiCreditCard />
+      <FiPieChart />
+      <FiTrendingUp />
+      <FiArrowRight />
+      <FiPercent />
       <p>
         Visit
-        <a href="https://mui.com/material-ui/material-icons/" target="_blank" rel="noreferrer">
-          Material icons
+        <a href="https://react-icons.github.io/react-icons/" target="_blank" rel="noreferrer">
+          React Icons
         </a>
         for all icons
       </p>
@@ -37,5 +37,3 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {};
-
-// export const FiltersIcon = () => <div className={styles.filtersLogo} />;

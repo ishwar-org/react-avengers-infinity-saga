@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { ChangeEvent, useState } from 'react';
 import Switch, { SwitchProps } from '.';
-import { Meh, Smile } from '../../Icons';
+import {FiMeh, FiSmile } from '../../Icons';
 
 const meta: Meta<SwitchProps> = {
     title: 'Components/Form/Switch',
@@ -108,8 +108,8 @@ export const WithDifferentIcon: Story = {
         inputProps: {
             'aria-label': 'controlled',
         },
-        icon: <Meh />,
-        checkedIcon: <Smile />,
+        icon: <FiMeh />,
+        checkedIcon: <FiSmile />,
         'data-testid': 'test-switch-icon',
         onChange: (e: ChangeEvent<HTMLInputElement>) => {
             alert(`Switch is now ${e.target.checked ? 'ON' : 'OFF'}`);

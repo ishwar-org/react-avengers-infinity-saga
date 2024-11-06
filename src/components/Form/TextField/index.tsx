@@ -7,7 +7,7 @@ import {
     TextFieldProps as MuiTextFieldProps,
     FormLabel,
 } from '@mui/material';
-import { AlertCircle, Check } from '../../Icons';
+import { FiAlertCircle, FiCheck } from '../../Icons';
 import classNames from 'classnames';
 import {
     ReactNode,
@@ -114,7 +114,7 @@ const TextField = ({
                         position='end'
                         className={styles['textfield-error-endadornment']}
                     >
-                        <AlertCircle />
+                        <FiAlertCircle />
                     </InputAdornment>
                 )}
                 {success && !hideSuccessIcon && (
@@ -122,7 +122,7 @@ const TextField = ({
                         position='end'
                         className={styles['textfield-success-endadornment']}
                     >
-                        <Check />
+                        <FiCheck />
                     </InputAdornment>
                 )}
             </>

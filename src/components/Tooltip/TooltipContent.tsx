@@ -7,9 +7,9 @@ export type TooltipContentProps = {
     "data-testid"?: string;
 }
 
-const TooltipContent = forwardRef(function TooltipContent(
-    props: TooltipContentProps,
-    ref: any
+const TooltipContent = forwardRef<HTMLSpanElement, TooltipContentProps>(function TooltipContent(
+    props,
+    ref
 ) {
     const { children, className, "data-testid": dataTestId } = props;
     return (

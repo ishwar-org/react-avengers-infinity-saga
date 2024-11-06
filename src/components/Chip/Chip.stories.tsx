@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Smile } from '../Icons';
+import { FiSmile } from '../Icons';
 import Chip, { ChipProps } from '.';
 
 const meta: Meta<ChipProps> = {
@@ -63,7 +63,7 @@ export const Default: Story = {
     render: StoryContainer,
     args: {
         label: "New Arrival",
-        icon: <Smile />,
+        icon: <FiSmile />,
         variant: "outlined",
         color: "primary",
         withRound: true,

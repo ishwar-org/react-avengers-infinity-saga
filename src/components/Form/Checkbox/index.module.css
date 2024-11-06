@@ -1,0 +1,56 @@
+.checkboxLabel :global(.MuiFormControlLabel-label){
+    color: var(--greySecondary);
+}
+
+.checkboxLabel :global(.MuiFormControlLabel-asterisk){
+    color: var(--danger);
+}
+
+.checkboxLabel:global(.Mui-disabled) :global(.MuiFormControlLabel-asterisk){
+    color: var(--error);
+    opacity: 0.3;
+}
+
+.checkboxLabelSmall :global(.MuiFormControlLabel-label){
+    font-size: var(--fontSize14);
+}
+
+.checkboxLabelMedium :global(.MuiFormControlLabel-label){
+    font-size: var(--fontSize16);
+}
+
+.checkboxLabelLarge :global(.MuiFormControlLabel-label) {
+    font-size: var(--fontSize18);
+}
+
+.checkbox-variant-primary:global(.MuiCheckbox-root) {
+    color: var(--primary);
+}
+
+.checkbox-variant-primary:global(.MuiCheckbox-root.Mui-checked) {
+    color: var(--primary);
+}
+
+.checkbox-variant-info:global(.MuiCheckbox-root){
+    color: var(--info);
+}
+
+.checkbox-variant-info:global(.MuiCheckbox-root.Mui-checked) {
+    color: var(--info);
+}
+
+.checkbox-variant-secondary:global(.MuiCheckbox-root) {
+    color: var(--secondary);
+}
+
+.checkbox-variant-secondary:global(.MuiCheckbox-root.Mui-checked) {
+    color: var(--greySecondary);
+}
+
+.checkbox-variant-success:global(.MuiCheckbox-root) {
+    color: var(--green-bright);
+}
+
+.checkbox-variant-success:global(.MuiCheckbox-root.Mui-checked) {
+    color: var(--green-bright);
+}

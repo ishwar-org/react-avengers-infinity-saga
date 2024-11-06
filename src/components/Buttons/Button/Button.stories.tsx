@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import Button, { ButtonProps } from '.';
-import { ArrowLeft, ArrowRight } from '../../Icons';
+import { FiArrowLeft, FiArrowRight } from '../../Icons';
 
 const meta: Meta<ButtonProps> = {
     title: 'Components/Buttons/Button',
@@ -80,7 +80,7 @@ const meta: Meta<ButtonProps> = {
             },
             options: ['', 'icon'],
             mapping: {
-                icon: <ArrowLeft />,
+                icon: <FiArrowLeft />,
             },
         },
         endIcon: {
@@ -94,7 +94,7 @@ const meta: Meta<ButtonProps> = {
             },
             options: ['', 'icon'],
             mapping: {
-                icon: <ArrowRight />,
+                icon: <FiArrowRight />,
             },
         },
     },

@@ -10,7 +10,7 @@ import React, {
     ReactNode,
     forwardRef,
 } from 'react';
-import { AlertCircle, Check } from '../../Icons';
+import { FiAlertCircle, FiCheck } from '../../Icons';
 import styles from './index.module.css';
 
 interface FieldBaseProps {
@@ -104,7 +104,7 @@ const TextArea = (
                         styles[`textarea-error-icon`],
                     )}
                 >
-                    <AlertCircle className={styles.errorIcon} />
+                    <FiAlertCircle className={styles.errorIcon} />
                 </InputAdornment>
             )}
             {success && (
@@ -115,7 +115,7 @@ const TextArea = (
                         styles[`textarea-success-icon`],
                     )}
                 >
-                    <Check className={styles.successIcon} />
+                    <FiCheck className={styles.successIcon} />
                 </InputAdornment>
             )}
             {helperText && (

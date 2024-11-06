@@ -25,6 +25,7 @@
 
 .switch-icon :global(.MuiSwitch-switchBase){
     color: var(--neutral400);
+    font-size: 24px;
 }
 
 .switch-bg-primary :global(.MuiSwitch-switchBase.Mui-checked),
