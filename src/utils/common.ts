@@ -1,3 +1,5 @@
+import { M } from "vite/dist/node/types.d-aGj9QkWt";
+
 const a11yControlsProps = (index: number) => {
     return {
         id: `avengers-control-${index}`,

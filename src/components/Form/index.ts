@@ -8,3 +8,5 @@ export { default as TextArea } from './TextArea';
 export type { TextAreaProps } from './TextArea';
 export { default as RadioField } from './Radio';
 export type { RadioProps } from './Radio';
+export { default as CheckboxField } from './Checkbox';
+export type { CheckboxProps } from './Checkbox';
